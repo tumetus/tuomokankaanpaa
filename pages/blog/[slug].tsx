@@ -1,19 +1,22 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { getAllPostSlugs, getPostData } from '../../lib/posts';
-import Layout from '../../components/layout';
-import Date from '../../components/date';
-import utilStyles from '../../styles/utils.module.css';
+import { getAllPostSlugs, getPostData } from "../../lib/posts";
+import Layout from "../../components/layout";
+import Date from "../../components/date";
+import utilStyles from "../../styles/utils.module.css";
 import Head from "next/head";
+const f = () => {
+  return 1;
+};
 
 export default function BlogPost({
-  postData
+  postData,
 }: {
   postData: {
-    title: string,
-    slug: string,
-    date: string,
-    contentHtml: string
-  }
+    title: string;
+    slug: string;
+    date: string;
+    contentHtml: string;
+  };
 }) {
   return (
     <Layout>
@@ -35,15 +38,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const paths = getAllPostSlugs();
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
-}
+};
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const postData = await getPostData(params.slug as string);
   return {
     props: {
-      postData
-    }
+      postData,
+    },
   };
-}
+};
