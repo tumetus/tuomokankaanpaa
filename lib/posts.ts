@@ -1,32 +1,24 @@
-import fs from "fs";
+import fs, { readdirSync } from "fs";
 import path from "path";
 import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
+import { Post } from "../common/types";
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getSortedPostsData() {
-  // Get file names under /posts
-  const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get slug
-    const slug = fileName.replace(/\.md$/, "");
+const getFolderNames = (source: string) =>
+  readdirSync(source, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
 
-    // Read markdown file as string
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    // Combine the data with the slug
-    return {
-      slug,
-      ...(matterResult.data as { date: string; title: string }),
-    };
+export async function getSortedPostsData() {
+  let allPostsData: Array<Post> = [];
+  getFolderNames(postsDirectory).forEach(async (dirName: string) => {
+    const postData = await getPostData(dirName);
+    allPostsData.push(postData);
   });
-  // Sort posts by date
+
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
@@ -37,33 +29,19 @@ export function getSortedPostsData() {
 }
 
 export function getAllPostSlugs() {
-  const fileNames = fs.readdirSync(postsDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       slug: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       slug: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-  return fileNames.map((fileName) => {
+  const slugs: Array<string> = getFolderNames(postsDirectory);
+  return slugs.map((slug) => {
     return {
       params: {
-        slug: fileName.replace(/\.md$/, ""),
+        slug,
       },
     };
   });
 }
 
-export async function getPostData(slug: string) {
-  const fullPath = path.join(postsDirectory, `${slug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+export async function getPostData(slug: string): Promise<Post> {
+  const fullPath: string = path.join(postsDirectory, slug, `index.md`);
+  const fileContents: string = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
