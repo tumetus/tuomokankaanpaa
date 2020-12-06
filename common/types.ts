@@ -10,3 +10,5 @@ export interface Post {
   contentHtml: string;
   contentMarkdown: string;
 }
+
+export type ActivePage = "blog" | "courses" | "newsletter";

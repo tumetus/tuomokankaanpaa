@@ -5,25 +5,12 @@ import { useState } from "react";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 import { getSortedPostsData } from "../../lib/posts";
-import utilStyles from "../../styles/utils.module.css";
 import { Post } from "../../common/types";
 
 export default function Blog({ allPostsData }) {
-  const includePost = (searchText: string, post: Post) => {
-    const title =
-      post.title.toLowerCase().indexOf(searchText.toLowerCase()) == -1
-        ? false
-        : true;
-    const content =
-      post.contentHtml.toLowerCase().indexOf(searchText.toLowerCase()) == -1
-        ? false
-        : true;
-    return title || content;
-  };
-
   let [searchText, setSearchText] = useState("");
   return (
-    <Layout>
+    <Layout activePage={"blog"}>
       <div>
         <input
           className={css(`
@@ -31,16 +18,26 @@ export default function Blog({ allPostsData }) {
             margin: 5px 0;
             padding: 10px;
             font-size: 1.25rem;
+            ::placeholder {
+              opacity: 0.4;
+            }
           `)}
           type="text"
           onChange={(e) => setSearchText(e.target.value)}
           value={searchText}
+          placeholder="Search..."
         />
       </div>
-      <ul className={utilStyles.list}>
+      <ul
+        className={css(`
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      `)}
+      >
         {allPostsData.map(
           (p) =>
-            includePost(searchText, p) && <PostCard key={p.slug} post={p} />
+            getIncludePost(searchText, p) && <PostCard key={p.slug} post={p} />
         )}
       </ul>
     </Layout>
@@ -50,22 +47,43 @@ export default function Blog({ allPostsData }) {
 const PostCard = ({ post }: { post: Post }) => {
   const { title, slug, date, tags, excerpt } = post;
   return (
-    <li className={utilStyles.listItem}>
+    <li
+      className={css(`
+      margin: 0 0 2rem;
+    `)}
+    >
       <h3
         className={css(`
-        margin-bottom: 0;
-      `)}
+          margin-bottom: 0;
+        `)}
       >
         <Link href={`/blog/${slug}`}>
           <a>{title}</a>
         </Link>
       </h3>
-      <small className={utilStyles.lightText}>
+      <small
+        className={css(`
+          color: #999;
+          font-size: 0.8rem;
+        `)}
+      >
         <Date dateString={date} />
       </small>
       <section>{excerpt}</section>
     </li>
   );
+};
+
+const getIncludePost = (searchText: string, post: Post) => {
+  const title =
+    post.title.toLowerCase().indexOf(searchText.toLowerCase()) == -1
+      ? false
+      : true;
+  const content =
+    post.contentHtml.toLowerCase().indexOf(searchText.toLowerCase()) == -1
+      ? false
+      : true;
+  return title || content;
 };
 
 export const getStaticProps: GetStaticProps = async () => {

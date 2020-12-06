@@ -2,7 +2,7 @@ import { jsx, ThemeProvider } from "@emotion/react";
 import { AppProps } from "next/app";
 import "../styles/global.css";
 
-const theme = {
+export const theme = {
   colors: {
     primary: "hotpink",
   },
