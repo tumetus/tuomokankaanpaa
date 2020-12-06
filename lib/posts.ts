@@ -56,6 +56,7 @@ export async function getPostData(slug: string): Promise<Post> {
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { date: string; title: string }),
+    contentMarkdown: matterResult.content,
+    ...(matterResult.data as Post),
   };
 }

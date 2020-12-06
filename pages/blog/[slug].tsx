@@ -1,23 +1,29 @@
 import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
+import ReactMarkdown from "react-markdown";
 import { getAllPostSlugs, getPostData } from "../../lib/posts";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
 import utilStyles from "../../styles/utils.module.css";
-import Head from "next/head";
-const f = () => {
-  return 1;
-};
+import { Post } from "../../common/types";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus as codeSyntaxTheme } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-export default function BlogPost({
-  postData,
-}: {
-  postData: {
-    title: string;
-    slug: string;
-    date: string;
-    contentHtml: string;
+export default function BlogPost({ postData }: { postData: Post }) {
+  const renderers = {
+    code: ({ language, value }) => {
+      return (
+        <SyntaxHighlighter
+          style={codeSyntaxTheme}
+          language={language}
+          children={value}
+          wrapLines={true}
+          showLineNumbers={true}
+          startingLineNumber={1}
+        />
+      );
+    },
   };
-}) {
   return (
     <Layout>
       <Head>
@@ -28,7 +34,10 @@ export default function BlogPost({
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <ReactMarkdown
+          children={postData.contentMarkdown}
+          renderers={renderers}
+        />
       </article>
     </Layout>
   );

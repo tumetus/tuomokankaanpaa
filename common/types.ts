@@ -1,6 +1,12 @@
 export interface Post {
-  slug: string;
-  contentHtml: string;
   date: string;
   title: string;
+  excerpt: string;
+  metaDescription: string;
+  seoTitle: string;
+  featureImage: string;
+  tags: string;
+  slug: string;
+  contentHtml: string;
+  contentMarkdown: string;
 }

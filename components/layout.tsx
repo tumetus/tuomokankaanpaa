@@ -1,16 +1,18 @@
 import Head from "next/head";
-import styles from "./layout.module.css";
 import Link from "next/link";
+import styles from "./layout.module.css";
+import { css } from "@emotion/css";
+import { useTheme } from "@emotion/react";
 
 export const siteTitle = "Tuomo Kankaanpää";
 
 export default function Layout({
   children,
-  home,
 }: {
   children: React.ReactNode;
   home?: boolean;
 }) {
+  const theme = useTheme();
   return (
     <div className={styles.container}>
       <Head>
@@ -26,9 +28,20 @@ export default function Layout({
 
       <header className={styles.header}>
         <nav>
-          <Link href="/">
-            <a>Tuomo Kankaanpää</a>
-          </Link>
+          <h1>
+            <Link href="/">
+              <a
+                className={css(`
+                color: ${theme.colors.primary};
+                &:hover {
+                  text-decoration: none;
+                }
+              `)}
+              >
+                Tuomo Kankaanpää
+              </a>
+            </Link>
+          </h1>
           <br />
           <Link href="/blog">
             <a>Blog</a>
