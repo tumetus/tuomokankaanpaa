@@ -55,7 +55,7 @@ export default function BlogPost({ postData }: { postData: Post }) {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostSlugs();
+  const paths = await getAllPostSlugs();
   return {
     paths,
     fallback: false,

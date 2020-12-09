@@ -11,7 +11,7 @@ export default function Layout({
   activePage,
 }: {
   children: React.ReactNode;
-  activePage: ActivePage;
+  activePage?: ActivePage;
 }) {
   return (
     <div
