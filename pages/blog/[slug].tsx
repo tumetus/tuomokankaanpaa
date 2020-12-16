@@ -11,6 +11,13 @@ import { vscDarkPlus as codeSyntaxTheme } from "react-syntax-highlighter/dist/cj
 
 export default function BlogPost({ postData }: { postData: Post }) {
   const renderers = {
+    link: (linkProps) => {
+      return (
+        <a {...linkProps} target="_blank">
+          {linkProps.children}
+        </a>
+      );
+    },
     code: ({ language, value }) => {
       return (
         <SyntaxHighlighter
