@@ -59,12 +59,17 @@ export async function getPostData(slug: string): Promise<Post> {
     slug
   );
 
+  const coverImage = matterResult.data.coverImage
+    ? `https://raw.githubusercontent.com/${ghRepo.username}\/${ghRepo.name}/master/${slug}/images/${matterResult.data.coverImage}`
+    : null;
+
   // Combine the data with the slug and contentHtml
   return {
     slug,
     contentHtml,
     contentMarkdown,
     ...(matterResult.data as Post),
+    coverImage,
   };
 }
 

@@ -9,6 +9,7 @@ export interface Post {
   slug: string;
   contentHtml: string;
   contentMarkdown: string;
+  coverImage: string;
 }
 
 export type ActivePage = "blog" | "courses" | "newsletter";

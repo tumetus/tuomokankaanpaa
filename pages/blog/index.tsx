@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import { css } from "@emotion/css";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
@@ -44,32 +45,101 @@ export default function Blog({ allPostsData }) {
   );
 }
 
+const PostCard2 = ({ post }: { post: Post }) => {
+  const { title, slug, date, tags, excerpt, coverImage } = post;
+  // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
+  return (
+    <li
+      className={css(`
+    `)}
+    >
+      <div
+        className={css(`
+      `)}
+      >
+        <h2
+          className={css(`
+          margin-bottom: 0;
+        `)}
+        >
+          <Link href={`/blog/${slug}`}>
+            <a>{title}</a>
+          </Link>
+        </h2>
+        <small
+          className={css(`
+          color: #999;
+          font-size: 0.8rem;
+        `)}
+        >
+          <Date dateString={date} />
+        </small>
+      </div>
+      <div
+        className={css(`
+      `)}
+      >
+        <img
+          src={coverImage}
+          className={css(`
+          width: 100%;
+        `)}
+        />
+      </div>
+      <div
+        className={css(`
+      `)}
+      >
+        <section>{excerpt}</section>
+      </div>
+    </li>
+  );
+};
+
 const PostCard = ({ post }: { post: Post }) => {
-  const { title, slug, date, tags, excerpt } = post;
+  const { title, slug, date, tags, excerpt, coverImage } = post;
+  // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
   return (
     <li
       className={css(`
       margin: 0 0 2rem;
+      display: flex;
+      align-items: center;
     `)}
     >
-      <h3
+      <div
         className={css(`
-          margin-bottom: 0;
-        `)}
+          width: 30%;
+          padding-right: 10px;
+      `)}
       >
-        <Link href={`/blog/${slug}`}>
-          <a>{title}</a>
-        </Link>
-      </h3>
-      <small
+        <img src={coverImage} />
+      </div>
+      <div
         className={css(`
+          width: 70%;
+      `)}
+      >
+        <h3
+          className={css(`
+          margin-bottom: 0;
+          margin-top: 0;
+        `)}
+        >
+          <Link href={`/blog/${slug}`}>
+            <a>{title}</a>
+          </Link>
+        </h3>
+        <small
+          className={css(`
           color: #999;
           font-size: 0.8rem;
         `)}
-      >
-        <Date dateString={date} />
-      </small>
-      <section>{excerpt}</section>
+        >
+          <Date dateString={date} />
+        </small>
+        <section>{excerpt}</section>
+      </div>
     </li>
   );
 };
