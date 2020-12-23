@@ -98,6 +98,7 @@ const PostCard2 = ({ post }: { post: Post }) => {
 
 const PostCard = ({ post }: { post: Post }) => {
   const { title, slug, date, tags, excerpt, coverImage } = post;
+  console.log(coverImage);
   // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
   return (
     <li
@@ -113,7 +114,8 @@ const PostCard = ({ post }: { post: Post }) => {
           padding-right: 10px;
       `)}
       >
-        <img src={coverImage} />
+        {/* <img src={coverImage} /> */}
+        {coverImage && <Image width={200} height={120} src={`${coverImage}`} />}
       </div>
       <div
         className={css(`
