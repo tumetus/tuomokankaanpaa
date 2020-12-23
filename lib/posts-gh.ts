@@ -1,38 +1,35 @@
-import fs, { readdirSync } from "fs";
-import path from "path";
 import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
 import { Post } from "../common/types";
+
+interface Repository {
+  username: string;
+  name: string;
+}
 
 interface ImageToReplace {
   localImage: string;
   remoteImage: string;
 }
 
-interface BlogPostFolder {
-  fullPath: string;
-  folderName: string;
-}
-
-const blogPostFolder: BlogPostFolder = {
-  fullPath: "public/blog-posts",
-  folderName: "blog-posts",
+const ghRepo: Repository = {
+  username: "tumetus",
+  name: "tuomokankaanpaa-blog",
 };
 
-const postsDirectory = path.join(process.cwd(), blogPostFolder.fullPath);
-
-const getFolderNames = (source: string) =>
-  readdirSync(source, { withFileTypes: true })
-    .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => dirent.name);
-
 export async function getSortedPostsData() {
-  let allPostsData: Array<Post> = [];
-  getFolderNames(postsDirectory).forEach(async (dirName: string) => {
-    const postData = await getPostData(dirName);
-    allPostsData.push(postData);
+  const res = await fetch(
+    `https://raw.githubusercontent.com/${ghRepo.username}/${ghRepo.name}/main/index.json`
+  );
+  const data: Array<{ path: string }> = await res.json();
+
+  let promises = [];
+  data.forEach(async (obj) => {
+    promises.push(getPostData(obj.path));
   });
+
+  let allPostsData: Post[] = await Promise.all(promises);
 
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
@@ -43,20 +40,10 @@ export async function getSortedPostsData() {
   });
 }
 
-export function getAllPostSlugs() {
-  const slugs: Array<string> = getFolderNames(postsDirectory);
-  return slugs.map((slug) => {
-    return {
-      params: {
-        slug,
-      },
-    };
-  });
-}
-
 export async function getPostData(slug: string): Promise<Post> {
-  const fullPath: string = path.join(postsDirectory, slug, `index.md`);
-  const fileContents: string = fs.readFileSync(fullPath, "utf8");
+  const postUrl = `https://raw.githubusercontent.com/${ghRepo.username}/${ghRepo.name}/main/${slug}/index.md`;
+  const res = await fetch(postUrl);
+  const fileContents: string = await res.text();
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
@@ -66,13 +53,14 @@ export async function getPostData(slug: string): Promise<Post> {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
+
   const contentMarkdown = convertLocalImagesToRemoteImages(
     matterResult.content,
     slug
   );
 
   const coverImage = matterResult.data.coverImage
-    ? `/${blogPostFolder.folderName}/${slug}/images/${matterResult.data.coverImage}`
+    ? `https://raw.githubusercontent.com/${ghRepo.username}\/${ghRepo.name}/master/${slug}/images/${matterResult.data.coverImage}`
     : null;
 
   // Combine the data with the slug and contentHtml
@@ -110,9 +98,11 @@ const convertLocalImagesToRemoteImages = (
 
       localImagesToReplace.push({
         localImage: image,
-        remoteImage: `![${alt || ""}](/${
-          blogPostFolder.folderName
-        }/${slug}/${assetPath}${title ? ` '${title}'` : ``})`,
+        remoteImage: `![${alt || ""}](https://raw.githubusercontent.com/${
+          ghRepo.username
+        }\/${ghRepo.name}/master/${slug}/${assetPath}${
+          title ? ` '${title}'` : ``
+        })`,
       });
     }
   }
@@ -126,3 +116,25 @@ const convertLocalImagesToRemoteImages = (
     article
   );
 };
+
+const getAllPostPaths = async (): Promise<string[]> => {
+  const res = await fetch(
+    `https://raw.githubusercontent.com/${ghRepo.username}/${ghRepo.name}/main/index.json`
+  );
+  const data: Array<{ path: string }> = await res.json();
+
+  return data.map((obj) => {
+    return obj.path;
+  });
+};
+
+export async function getAllPostSlugs() {
+  const slugs: Array<string> = await getAllPostPaths();
+  return slugs.map((slug) => {
+    return {
+      params: {
+        slug,
+      },
+    };
+  });
+}
