@@ -45,6 +45,47 @@ export default function Blog({ allPostsData }) {
   );
 }
 
+const PostCard = ({ post }: { post: Post }) => {
+  const { title, slug, date, tags, excerpt, coverImage } = post;
+  // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
+  return (
+    <li
+      className={css(`
+      padding: 10px 0;
+    `)}
+    >
+      <div
+        className={css(`
+      `)}
+      >
+        <h3
+          className={css(`
+          margin-bottom: 0;
+        `)}
+        >
+          <Link href={`/blog/${slug}`}>
+            <a>{title}</a>
+          </Link>
+        </h3>
+        <small
+          className={css(`
+          color: #999;
+          font-size: 0.8rem;
+        `)}
+        >
+          <Date dateString={date} />
+        </small>
+      </div>
+      <div
+        className={css(`
+      `)}
+      >
+        <section>{excerpt}</section>
+      </div>
+    </li>
+  );
+};
+
 const PostCard2 = ({ post }: { post: Post }) => {
   const { title, slug, date, tags, excerpt, coverImage } = post;
   // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
@@ -96,7 +137,7 @@ const PostCard2 = ({ post }: { post: Post }) => {
   );
 };
 
-const PostCard = ({ post }: { post: Post }) => {
+const PostCard1 = ({ post }: { post: Post }) => {
   const { title, slug, date, tags, excerpt, coverImage } = post;
   console.log(coverImage);
   // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
