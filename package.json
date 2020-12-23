@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "gen-blog-post": "node bin/generate-blog-post.js"
   },
   "dependencies": {
     "@emotion/css": "^11.0.0",
