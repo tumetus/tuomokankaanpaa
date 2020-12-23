@@ -28,11 +28,14 @@ const getFolderNames = (source: string) =>
     .map((dirent) => dirent.name);
 
 export async function getSortedPostsData() {
-  let allPostsData: Array<Post> = [];
-  getFolderNames(postsDirectory).forEach(async (dirName: string) => {
-    const postData = await getPostData(dirName);
-    allPostsData.push(postData);
+  const data: Array<string> = getFolderNames(postsDirectory);
+
+  let promises = [];
+  data.forEach(async (dirName) => {
+    promises.push(getPostData(dirName));
   });
+
+  let allPostsData: Post[] = await Promise.all(promises);
 
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {

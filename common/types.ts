@@ -4,7 +4,6 @@ export interface Post {
   excerpt: string;
   metaDescription: string;
   seoTitle: string;
-  featureImage: string;
   tags: string;
   slug: string;
   contentHtml: string;
