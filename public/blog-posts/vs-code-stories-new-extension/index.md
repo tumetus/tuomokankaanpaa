@@ -6,9 +6,9 @@ coverImage: "vscode-stories-feature-img.jpg"
 
 _Do you ever just wake up in the morning, open up VS Code, and think to yourself "Wow I wonder what other coders are doing around the world, what are they coding on?"._
 
-That's how Ben Awad starts his [video](https://www.youtube.com/watch?v=ApR-kNXxLUs) where he introduces VS Code stories, an extension for [Visual Studio Code](https://codepulse.blog/top-10-keyboard-shortcuts-for-visual-studio-code/) which adds stories to VS Code.
+That's how Ben Awad starts his [video](https://www.youtube.com/watch?v=ApR-kNXxLUs) where he introduces VS Code stories, an extension for [Visual Studio Code](/blog/top-10-keyboard-shortcuts-for-visual-studio-code/) which adds stories to VS Code.
 
-![](images/vs-code-stories-screenshot-1024x576.png)
+![vs code stories](./images/vs-code-stories-screenshot-1024x576.png)
 
 He literally created an extension for VS Code that you can use to view Instagram like stories and upload your own ones for others to see. I think this was just hilarious and at the same time super awesome!
 

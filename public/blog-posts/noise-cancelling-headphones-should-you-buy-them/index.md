@@ -4,7 +4,7 @@ date: "2018-08-15"
 coverImage: "open-office-headphones.jpg"
 ---
 
-[![](images/open-office-headphones.jpg)](https://codepulse.blog/wp-content/uploads/2018/08/open-office-headphones.jpg)
+![Noise cancelling headphones in use](./images/open-office-headphones.jpg)
 
 Most of the time coding requires undivided concentration on the task at hand. So do you know the feeling when you are working on something that requires your full attention. Then something happens around you, phone rings or people start a conversation, and this breaks your concentration.
 
@@ -18,7 +18,7 @@ I went to a store and tried out a pair of [Bose's QuietComfort 35 (Series I)](h
 
 I am happy to say that they were!
 
-#### Life ANCH (After Noise Cancelling Headphones)
+## Life ANCH (After Noise Cancelling Headphones)
 
 I do most of my programming in an open office or places that are crowded and tend to have quite a bit background noise or people having conversations. With my old headphones I could always hear some of the background noise or a conversation that other people were having near me. With my Boses, once I place them on my ears and put on the music, every other sound disappears and I am able to concentrate on my coding without being disturbed by my surroundings.
 
@@ -26,9 +26,9 @@ I have used my noise cancelling headphones for two years soon. Has it been worth
 
 I am able to concentrate on my work better and much easily and I have experienced improvements in productivity since I'm being distracted less by my surroundings. One thing is for sure, I won't be buying any other than noise cancelling headphones in the future either.
 
-\[caption id="attachment\_344" align="aligncenter" width="640"\][![](images/tume_coding-819x1024.jpg)](https://codepulse.blog/wp-content/uploads/2018/08/tume_coding.jpg) My headphones in action\[/caption\]
+![My headphones in action](./images/tume_coding-819x1024.jpg)
 
-#### Conclusion
+## Conclusion
 
 If you are working in open office or crowded place I strongly recommend getting a pair of noise cancelling headphones for yourself if you have a chance. At least go to a store and try them out so you see how well they can work.
 

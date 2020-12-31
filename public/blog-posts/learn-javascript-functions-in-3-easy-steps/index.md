@@ -8,4 +8,4 @@ Are you struggling with understanding functions and function parameters? I just 
 
 You can watch the video [here](https://www.youtube.com/watch?v=YbXVnvRsmvs).
 
-https://www.youtube.com/watch?v=YbXVnvRsmvs
+[![JavaScript Functions for Beginners (tutorial)](http://img.youtube.com/vi/YbXVnvRsmvs/0.jpg)](http://www.youtube.com/watch?v=YbXVnvRsmvs)

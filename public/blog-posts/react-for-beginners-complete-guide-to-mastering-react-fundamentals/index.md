@@ -4,7 +4,9 @@ date: "2020-04-15"
 coverImage: "react-basic-course-thumb.png"
 ---
 
-[![React Fundamentals Course](images/react-basic-course-thumb.png)](https://skl.sh/2XAKn7u)
+[
+![React Fundamentals Course](./images/react-basic-course-thumb.png)
+](https://skl.sh/2XAKn7u)
 
 I’m excited to announce that I just published my new online course "React for Beginners: Complete Guide to Mastering React Fundamentals" on [Skillshare](https://skl.sh/2XAKn7u)!
 
@@ -29,4 +31,4 @@ With the Skillshare premium membership you can watch my courses and every other 
 
 If React is something you want to learn, I strongly recommend you check the course out! I would also really appreciate if you let me know what you think of it!
 
-_If you are already familiar with React, you might be interested on my [Draft.js course](https://codepulse.blog/rich-text-editing-in-react-with-draft-js-course/). Draft.js is a rich text editor framework for React. If you need editor or text input component that can handle rich text content, Draft.js is a great choice. Like React, it is also originally created by Facebook._
+_If you are already familiar with React, you might be interested on my [Draft.js course](/blog/rich-text-editing-in-react-with-draft-js-course/). Draft.js is a rich text editor framework for React. If you need editor or text input component that can handle rich text content, Draft.js is a great choice. Like React, it is also originally created by Facebook._

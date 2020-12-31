@@ -4,13 +4,13 @@ date: "2020-04-08"
 coverImage: "rome-js-wide.jpg"
 ---
 
-![Rome js](https://i1.wp.com/codepulse.blog/wp-content/uploads/2020/04/rome-js.jpg?fit=640%2C413&ssl=1)
+![Rome js](./images/rome-js.jpg)
 
 Facebook just introduced a new experimental JavaScript toolchain tool called [Rome](https://romejs.dev/).
 
 Rome is an experimental JavaScript toolchain. It was started by [Sebastian McKenzie](https://twitter.com/sebmck), author of Babel and Yarn and member of the React Native team at Facebook.
 
-Rome includes compiler, linter, formatter, bundler, testing framework and more. It supports processing JSX, [Flow](https://codepulse.blog/my-first-time-using-flow-for-static-type-checking/) and TypeScript code. It is not production ready and is under active development. The current focus of the Rome team is linting and they welcome contributors (well, who doesn’t)!
+Rome includes compiler, linter, formatter, bundler, testing framework and more. It supports processing JSX, [Flow](/blog/my-first-time-using-flow-for-static-type-checking/) and TypeScript code. It is not production ready and is under active development. The current focus of the Rome team is linting and they welcome contributors (well, who doesn’t)!
 
 It aims to be "a comprehensive tool for anything related to the processing of JavaScript source code". It is not collection of existing tools and it actually doesn’t use any third-party dependencies.
 

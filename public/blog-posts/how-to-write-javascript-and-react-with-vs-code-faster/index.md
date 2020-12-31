@@ -10,7 +10,7 @@ VS Code is my favourite code editor and I use it mostly to write Javascript and 
 
 Since I use it a lot, I have picked up few things that make my life easier as a Javascript and React developer. One of them is code snippets!
 
-_See also: [TOP 10 Keyboard Shortcuts For Visual Studio Code](https://codepulse.blog/top-10-keyboard-shortcuts-for-visual-studio-code/)_
+_See also: [TOP 10 Keyboard Shortcuts For Visual Studio Code](/blog/top-10-keyboard-shortcuts-for-visual-studio-code/)_
 
 Code snippets are great because they save me from having to write same boilerplate code, for example when creating a React component or defining a for loop, over and over again.
 
@@ -18,7 +18,8 @@ You just type in the prefix for the code you want to generate and press enter an
 
 [On the video below](https://www.youtube.com/watch?v=uuXxomVFbC8), I will show you how you can get started on using React and Javascript code snippets with Visual Studio Code in a matter of minutes! I will also share bunch of my favourite and most used snippets that I use every day.
 
-https://www.youtube.com/watch?v=uuXxomVFbC8
+[![How to write Javascript and React with VS Code FASTER! (using code snippets)
+](http://img.youtube.com/vi/uuXxomVFbC8/0.jpg)](http://www.youtube.com/watch?v=uuXxomVFbC8)
 
 If you rather read, here is a short summary of the video. (I still recommend you [check the video out](https://www.youtube.com/watch?v=uuXxomVFbC8), and if you like it please do subscribe to [my Youtube channel](https://www.youtube.com/channel/UC34UXFLKqdW3cpk5CBu2Siw) also, I would really appreciate it!).
 
@@ -30,77 +31,99 @@ After installing the extension, you can start using the snippets right away! Sni
 
 Here are couple of my favourite snippets:
 
-###### fin
+### fin
 
+```jsx
 for(let itemName in objectName { }
+```
 
-###### nfn
+### nfn
 
-const functionName = (params) => { }
+```jsx
+const functionName = (params) => {};
+```
 
-###### clg
+### clg
 
-console.log(object)
+```jsx
+console.log(object);
+```
 
-###### imr
+### imr
 
-import React from 'react'
+```jsx
+import React from "react";
+```
 
-###### imrc
+### imrc
 
-import React, { Component } from 'react'
+```jsx
+import React, { Component } from "react";
+```
 
-###### imrr
+### imrr
 
-import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom'
+```jsx
+import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+```
 
-###### cdm
+### cdm
 
-componentDidMount = () => { }
+```jsx
+componentDidMount = () => {};
+```
 
-###### cdup
+### cdup
 
-componentDidUpdate = (prevProps, prevState) => { }
+```jsx
+componentDidUpdate = (prevProps, prevState) => {};
+```
 
-###### rcc
+### rcc
 
-import React, { Component } from 'react'
+```jsx
+import React, { Component } from "react";
 
 export default class FileName extends Component {
   render() {
-    return <div>$2</div>
+    return <div>$2</div>;
   }
 }
+```
 
-###### rpcp
+### rpcp
 
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
+```jsx
+import React, { PureComponent } from "react";
+import PropTypes from "prop-types";
 
 export default class FileName extends PureComponent {
-  static propTypes = {}
+  static propTypes = {};
 
   render() {
-    return <div>$2</div>
+    return <div>$2</div>;
   }
 }
+```
 
-###### rcredux
+### rcredux
 
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+```jsx
+import React, { Component } from "react";
+import { connect } from "react-redux";
 
 export class FileName extends Component {
   render() {
-    return <div>$4</div>
+    return <div>$4</div>;
   }
 }
 
-const mapStateToProps = (state) => ({})
+const mapStateToProps = (state) => ({});
 
-const mapDispatchToProps = {}
+const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(FileName)
+export default connect(mapStateToProps, mapDispatchToProps)(FileName);
+```
 
 ### Wrapping up
 

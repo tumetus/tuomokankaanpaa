@@ -10,17 +10,19 @@ Variable naming is hard. But one thing that is maybe even harder is thinking of 
 
 I have a feeling that I am not alone with this. That is why I wrote this post. Because to be honest I no longer have this issue, thanks to Faker.js.
 
-#### Faker.js
+## Faker.js
 
 [Faker.js](https://github.com/marak/Faker.js/) is a fake data generator for JavaScript. We can use it to generate massive amounts of fake data in the browser and node.js. They have a long list of properties we can generate and I won't list all of them here (you can check it out [here](https://github.com/marak/Faker.js/#api-methods)) but to mention few, you can e.g. generate user names, avatars, emails, location, address, etc.
 
 Usage and the API is very easy and straight forward to use. If we want to use Faker.js in the browser and generate a user name and email, we can do it as follows.
 
-<script src = "faker.js" type = "text/javascript"></script>
+```html
+<script src="faker.js" type="text/javascript"></script>
 <script>
   var randomName = faker.name.findName(); // Caitlyn Kerluke
   var randomEmail = faker.internet.email(); // Rusty@arne.info
 </script>
+```
 
 So first we include faker.js file and then generate the name using `faker.` and the respective method name (you can find all the available methods from the [documentation](https://github.com/marak/Faker.js/#api-methods)).
 

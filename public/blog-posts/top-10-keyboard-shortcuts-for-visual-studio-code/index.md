@@ -8,6 +8,6 @@ Visual Studio Code is a great code editor. I have been using it few years now an
 
 So I uploaded a video where I share my top 10 VS Code keyboard shortcuts that I use daily and can't live without. Hope you enjoy it and also learn few new shortcuts! You can watch the video below or by clicking [here](https://www.youtube.com/watch?v=9Jo084i0Dzs).
 
-https://www.youtube.com/watch?v=9Jo084i0Dzs
+[![Top 10 Keyboard Shortcuts for Visual Studio Code in 2021](http://img.youtube.com/vi/9Jo084i0Dzs/0.jpg)](http://www.youtube.com/watch?v=9Jo084i0Dzs)
 
-_Read also [If You Use GIT and VS Code - Read This!](https://codepulse.blog/if-you-use-git-and-vs-code-read-this/)_
+_Read also [If You Use GIT and VS Code - Read This!](/blog/if-you-use-git-and-vs-code-read-this/)_

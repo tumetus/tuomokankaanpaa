@@ -30,40 +30,39 @@ Now we are ready for some charts! Let’s create a new file and name it MyBarCha
 
 ```jsx
 // MyBarChart.js
-import React from 'react';
+import React from "react";
 
 class MyBarChart extends React.Component {
-    render() {
-        const data = this.props.data;
-        const chartWidth = 800;
-        const chartHeight = 500;
-        const chartDomain = [0, chartHeight];
-        return (
-           <div>barchart!</div>
-        );
-    }
+  render() {
+    const data = this.props.data;
+    const chartWidth = 800;
+    const chartHeight = 500;
+    const chartDomain = [0, chartHeight];
+    return <div>barchart!</div>;
+  }
 }
 
 export default MyBarChart;
 ```
 
-Ok so we have a component that renders div with text “barchart!”. We also defined some variables in the render method. _data_\-variable will represent the dataset we want to render, it will be passed to the component as props. _chartWidth_ and _chartHeight_ will be used to set the width and height of the chart. _chartDomain_ will be used to set the yDomain-prop of the bar chart. yDomain is an array with two numbers. First number will indicate the value of the lowest point on the y-axis (bottom of the chart) and the second number will indicate the value of the highest point on the y-axis (top of the chart). We will use 0 for the first number, so that the y-axis starts from 0, and chartHeight for the second value.
+Ok so we have a component that renders div with text “barchart!”. We also defined some variables in the render method. _data_-variable will represent the dataset we want to render, it will be passed to the component as props. _chartWidth_ and _chartHeight_ will be used to set the width and height of the chart. _chartDomain_ will be used to set the yDomain-prop of the bar chart. yDomain is an array with two numbers. First number will indicate the value of the lowest point on the y-axis (bottom of the chart) and the second number will indicate the value of the highest point on the y-axis (top of the chart). We will use 0 for the first number, so that the y-axis starts from 0, and chartHeight for the second value.
 
 Next up let’s import the MyBarChart component to our app and render it. Our App-component should look something like this.
 
 ```jsx
 // App.js
-import React, { Component } from 'react';
-import './App.css';
-import MyBarChart from './MyBarChart';
+import React, { Component } from "react";
+import "./App.css";
+import MyBarChart from "./MyBarChart";
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <MyBarChart />
-      </div>
-    );
-  }
+  render() {
+    return (
+      <div className="App">
+                <MyBarChart />
+             {" "}
+      </div>
+    );
+  }
 }
 export default App;
 ```
@@ -80,18 +79,18 @@ The objects should have x- and y-keys. I created an example dataset that we will
 
 ```json
 [
-    { "y": 100, "x": "Jan" },
-    { "y": 112, "x": "Feb" },
-    { "y": 230, "x": "Mar" },
-    { "y": 268, "x": "Apr" },
-    { "y": 300, "x": "May" },
-    { "y": 310, "x": "Jun" },
-    { "y": 315, "x": "Jul" },
-    { "y": 340, "x": "Aug" },
-    { "y": 388, "x": "Sep" },
-    { "y": 404, "x": "Oct" },
-    { "y": 442, "x": "Nov" },
-    { "y": 447, "x": "Dec" }
+  { "y": 100, "x": "Jan" },
+  { "y": 112, "x": "Feb" },
+  { "y": 230, "x": "Mar" },
+  { "y": 268, "x": "Apr" },
+  { "y": 300, "x": "May" },
+  { "y": 310, "x": "Jun" },
+  { "y": 315, "x": "Jul" },
+  { "y": 340, "x": "Aug" },
+  { "y": 388, "x": "Sep" },
+  { "y": 404, "x": "Oct" },
+  { "y": 442, "x": "Nov" },
+  { "y": 447, "x": "Dec" }
 ]
 ```
 
@@ -99,50 +98,48 @@ Now we can import this data in our App-component and pass it to the MyBarChart-c
 
 ```jsx
 // App.js
-import React, { Component } from 'react';
-import './App.css';
-import MyBarChart from './MyBarChart';
-import data from './data.json';
+import React, { Component } from "react";
+import "./App.css";
+import MyBarChart from "./MyBarChart";
+import data from "./data.json";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <MyBarChart data={data} />
-      </div>
-    );
-  }
+  render() {
+    return (
+      <div className="App">
+                <MyBarChart data={data} />
+             {" "}
+      </div>
+    );
+  }
 }
 
 export default App;
 ```
+
 ```jsx
 // MyBarChart.js
-import React from 'react';
-import {
-    XYPlot,
-    VerticalBarSeries
-} from 'react-vis';
+import React from "react";
+import { XYPlot, VerticalBarSeries } from "react-vis";
 
 class MyBarChart extends React.Component {
-    render() {
-        const data = this.props.data;
-        const chartWidth = 800;
-        const chartHeight = 500;
-        const chartDomain = [0, chartHeight];
-        return (
-            <XYPlot 
-               xType="ordinal" 
-               width={chartWidth} 
-               height={chartHeight} 
-               yDomain={chartDomain}
-             >
-                <VerticalBarSeries
-                    data={data}
-                />
-            </XYPlot>
-        );
-    }
+  render() {
+    const data = this.props.data;
+    const chartWidth = 800;
+    const chartHeight = 500;
+    const chartDomain = [0, chartHeight];
+    return (
+      <XYPlot
+        xType="ordinal"
+        width={chartWidth}
+        height={chartHeight}
+        yDomain={chartDomain}
+      >
+                        <VerticalBarSeries data={data} />
+                   {" "}
+      </XYPlot>
+    );
+  }
 }
 
 export default MyBarChart;
@@ -162,49 +159,48 @@ This is what our finished MyBarChart-component should look like.
 
 ```jsx
 // MyBarChart.js
-import React from 'react';
+import React from "react";
 import {
-    XYPlot,
-    XAxis, // Shows the values on x axis
-    YAxis, // Shows the values on y axis
-    VerticalBarSeries,
-    LabelSeries
-} from 'react-vis';
+  XYPlot,
+  XAxis, // Shows the values on x axis
+  YAxis, // Shows the values on y axis
+  VerticalBarSeries,
+  LabelSeries,
+} from "react-vis";
 
 class MyBarChart extends React.Component {
-    render() {
-        const data = this.props.data;
-        const chartWidth = 800;
-        const chartHeight = 500;
-        const chartDomain = [0, chartHeight];
-        return (
-            <XYPlot 
-                xType="ordinal" 
-                width={chartWidth} 
-                height={chartHeight} 
-                yDomain={chartDomain}
-            >
-                <XAxis />
-                <YAxis />
-                <VerticalBarSeries
-                    data={data}
-                />
-                <LabelSeries
-                    data={data.map(obj => {
-                        return { ...obj, label: obj.y.toString() }
-                    })}
-                    labelAnchorX="middle"
-                    labelAnchorY="text-after-edge"
-                />
-            </XYPlot>
-        );
-    }
+  render() {
+    const data = this.props.data;
+    const chartWidth = 800;
+    const chartHeight = 500;
+    const chartDomain = [0, chartHeight];
+    return (
+      <XYPlot
+        xType="ordinal"
+        width={chartWidth}
+        height={chartHeight}
+        yDomain={chartDomain}
+      >
+                        <XAxis />
+                        <YAxis />
+                        <VerticalBarSeries data={data} />
+                        <LabelSeries
+          data={data.map((obj) => {
+            return { ...obj, label: obj.y.toString() };
+          })}
+          labelAnchorX="middle"
+          labelAnchorY="text-after-edge"
+        />
+                    
+      </XYPlot>
+    );
+  }
 }
 
 export default MyBarChart;
 ```
- 
-#### Conclusion
+
+## Conclusion
 
 Creating charts with React and react-vis is pretty straight forward once you know your way around the react-vis components. There is a lot more you can do with react-vis and if you work with or are interested about data visualisation, for sure go ahead and check out the [documentation](https://uber.github.io/react-vis/documentation/welcome-to-react-vis) for more complex examples.
 

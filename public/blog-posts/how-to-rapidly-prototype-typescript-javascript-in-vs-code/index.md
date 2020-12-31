@@ -6,11 +6,11 @@ coverImage: "feature-quokka.jpg"
 
 Visual Studio Code is one of the most popular code editors for writing Typescript and Javascript. I use VS Code for all my Typescript and Javascript projects.
 
-https://www.youtube.com/watch?v=BnTy4IIa2hE
+[![How to rapidly prototype Javascript in Visual Studio Code](http://img.youtube.com/vi/BnTy4IIa2hE/0.jpg)](http://www.youtube.com/watch?v=BnTy4IIa2hE)
 
 If you are like me, using VS Code for writing Typescript / Javascript, you know that sometimes quick prototyping or testing is needed. For this kind of situations I use this extension called Quokka.js.
 
-_Read also: [How to write Javascript and React with VS Code FASTER!](https://codepulse.blog/how-to-write-javascript-and-react-with-vs-code-faster/)_
+_Read also: [How to write Javascript and React with VS Code FASTER!](/blog/how-to-write-javascript-and-react-with-vs-code-faster/)_
 
 After installing the extension you can launch a new Typescript / Javascript file with live code execution and results, value explorer, live code coverage and much more. Or if you want to check your existing code, you can also start the extension for an existing file.
 

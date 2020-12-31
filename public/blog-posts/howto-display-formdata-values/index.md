@@ -7,21 +7,25 @@ If you are working with Javascript and sending data to server, especially when y
 
 If you console.log FormData object, you will just get empty object logged to the console. What you need to do is use `entries` property. Here is how you can log all key/value pairs to console using [entries](https://developer.mozilla.org/en-US/docs/Web/API/FormData/entries) property.
 
+```js
 var formData = new FormData();
-formData.append('key\_one', 'First value');
-formData.append('key\_two', 'Second value');
-formData.append('key\_three', 'Thrid value');
+formData.append("key_one", "First value");
+formData.append("key_two", "Second value");
+formData.append("key_three", "Thrid value");
 
 // Log the key/value pairs
 for (var pair of formData.entries()) {
-    console.log(pair\[0\]+ ' - ' + pair\[1\]); 
+  console.log(pair[0] + " - " + pair[1]);
 }
+```
 
 This logs the following to the console:
 
-key\_one - First value
-key\_two - Second value
-key\_three - Thrid value
+```
+key_one - First value
+key_two - Second value
+key_three - Thrid value
+```
 
 `FormData.entries()` returns array of the form data key/value pairs. Each row in the array contains one key/value pair. So item key is in the index 0 and item value is in the index 1.
 

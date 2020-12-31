@@ -8,12 +8,13 @@ Focusing elements with plain Javascript is quite easy. You get the element for e
 
 The answer is: React Refs!
 
-<iframe src="https://www.youtube.com/embed/mqP_qNViGUQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+[![5 Tips for Successful Remote Work](http://img.youtube.com/vi/mqP_qNViGUQ/0.jpg)](http://www.youtube.com/watch?v=mqP_qNViGUQ)
 
-#### React Refs
+## React Refs
 
 [Refs](https://reactjs.org/docs/refs-and-the-dom.html) can be used to access DOM nodes or React components that are rendered in the render method. Refs are created with `React.createRef()` function. Refs can then be assigned to an element with ref-attribute. Following example shows a component that will focus to the text input when rendered.
 
+```jsx
 class AutoFocusTextInput extends React.Component {
   constructor(props) {
     super(props);
@@ -28,15 +29,17 @@ class AutoFocusTextInput extends React.Component {
     return <input ref={this.textInput} />;
   }
 }
+```
 
 So we create the ref in the constructor and assign it for `textInput` variable. Then in the `render()` method we render our input and set ref-attribute to equal the `textInput` variable. To get the input autofocus when the component is rendered, we call `focus()` on the `textInput` variable in the `componentDidMount()` method. Note that in order to access the DOM element of the ref we need to use the ref's `current` property.
 
-#### React < 16.3
+## React < 16.3
 
 The example above uses `React.createRef()` API for creating refs. It was introduced in React 16.3. If you are using an earlier version of React you should use [_callback refs_](https://reactjs.org/docs/refs-and-the-dom.html#callback-refs).
 
 With callback refs we need to pass a function (instead of ref attribute created by `React.createRef()`) for the input's ref-attribute. The function receives DOM element as its argument which can be stored and accessed elsewhere. So the `AutoFocusTextInput` component would look like following with callback refs.
 
+```jsx
 class AutoFocusTextInput extends React.Component {
   constructor(props) {
     super(props);
@@ -48,13 +51,14 @@ class AutoFocusTextInput extends React.Component {
   }
 
   render() {
-    return <input ref={elem => (this.textInput = elem)} />;
+    return <input ref={(elem) => (this.textInput = elem)} />;
   }
 }
+```
 
 In the constructor we define `textInput` variable and set it to `null`. Then in the `render()` method we pass a function which assigns the element, given as parameter, for the `textInput` variable. In the `componentDidMount()` method we now call `focus()` directly to the `textInput` variable since it is now the DOM element.
 
-#### Wrapping up
+## Wrapping up
 
 Focusing inputs with React is a bit different than with plain Javascript. But once you get the hang of it, it's quite straight forward. Depending on the React version in use, you have two options , from which to choose from, for implementing refs.
 
