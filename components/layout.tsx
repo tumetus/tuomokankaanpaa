@@ -1,10 +1,7 @@
-import Head from "next/head";
 import Link from "next/link";
 import { css } from "@emotion/css";
 import Navigation from "./navigation";
 import { ActivePage } from "../common/types";
-
-export const siteTitle = "Tuomo Kankaanpää";
 
 export default function Layout({
   children,
@@ -21,17 +18,6 @@ export default function Layout({
         margin: 3rem auto 6rem;
       `)}
     >
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Personal website for Tuomo Kankaanpää. All things related to web development."
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>{siteTitle}</title>
-      </Head>
-
       <header
         className={css(`
           display: flex;

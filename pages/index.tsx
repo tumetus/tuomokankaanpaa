@@ -17,7 +17,7 @@ export default function Home() {
         `)}
         >
           <Image
-            src="/images/tume_headshot.jpg"
+            src="/images/tuomokankaanpaa.jpg"
             width="450"
             height="450"
             className={css(`

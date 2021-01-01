@@ -1,9 +1,9 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 import { css } from "@emotion/css";
 import { getAllPostSlugs, getPostData } from "../../lib/posts";
 import Layout from "../../components/layout";
+import Meta, { SITE_URL } from "../../components/meta";
 import Date from "../../components/date";
 import { Post } from "../../common/types";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -33,9 +33,18 @@ export default function BlogPost({ postData }: { postData: Post }) {
   };
   return (
     <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+      <Meta
+        title={`${postData.title} - Tuomo Kankaanpää`}
+        ogTitle={`${postData.title} - Tuomo Kankaanpää`}
+        ogType="article"
+        description={postData.description}
+        ogDescription={postData.description}
+        ogUrl={`${SITE_URL}/blog/${postData.slug}`}
+        ogImage={postData.coverImage}
+        canonicalUrl={`${SITE_URL}/blog/${postData.slug}`}
+      >
+        <meta name="article:published_time" content={postData.date} />
+      </Meta>
       <article>
         <h1
           className={css(`

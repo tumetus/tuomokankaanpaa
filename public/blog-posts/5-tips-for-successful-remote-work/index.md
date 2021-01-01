@@ -2,6 +2,8 @@
 title: "5 Tips for Successful Remote Work"
 date: "2020-06-18"
 coverImage: "cover.jpg"
+description: "If you do remote work e.g. working from home, these tips will help you to be more productive and efficient when working remotely."
+excerpt: "If you do remote work e.g. working from home, these tips will help you to be more productive and efficient when working remotely."
 ---
 
 As a web developer I am able to work remotely quite a lot. Most of the time I'm working from home, but if I'm not at the office, I try to change the environment I work in as much as I can.

@@ -26,11 +26,10 @@ const mdTemplate = `---
 date: "2020-05-26"
 title: ""
 excerpt: ""
-metaDescription: ""
-seoTitle: ""
 tags: "tag1,tag2,tag3"
 slug: "${slug}"
 coverImage: "cover.jpg"
+description: "<insert meta & og description here>"
 ---
 `;
 
