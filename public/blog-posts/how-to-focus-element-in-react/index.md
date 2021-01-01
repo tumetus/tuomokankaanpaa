@@ -2,6 +2,9 @@
 title: "How to focus element in React"
 date: "2018-09-27"
 coverImage: "focus_search_field.png"
+description: "How can you focus element in React since you can't get the element by id, class or type, like you would with plain Javascript? The answer is..."
+excerpt: "How can you focus element in React since you can't get the element by id, class or type, like you would with plain Javascript? The answer is..."
+tags: javascript, react, web development
 ---
 
 Focusing elements with plain Javascript is quite easy. You get the element for example with id and call `focus()` on it e.g. `document.getElementById("myAnchor").focus()` and that's it. But how can you focus element in React since you can't get the element by id, class or type, like you would with plain Javascript?

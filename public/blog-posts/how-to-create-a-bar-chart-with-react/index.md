@@ -2,6 +2,9 @@
 title: "How to create a bar chart with React"
 date: "2018-06-20"
 coverImage: "react-vis-header-image.png"
+description: "Learn how to create a bar chart with React using react-vis."
+excerpt: "Learn how to create a bar chart with React using react-vis."
+tags: javascript, react, web development
 ---
 
 In this post we will create a bar chart component with React and use it to display an array of objects with x and y properties. We will use react-vis library to do this.

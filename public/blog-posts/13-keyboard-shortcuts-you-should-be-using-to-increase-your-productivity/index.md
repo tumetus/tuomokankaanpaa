@@ -2,6 +2,9 @@
 title: "13 Keyboard shortcuts you should be using to increase your productivity"
 date: "2018-09-22"
 coverImage: "black-and-white-computer-display-220357.jpg"
+description: "Here is 13 basic and easy keyboard shortcuts that will instantly increase your productivity."
+excerpt: "Here is 13 basic and easy keyboard shortcuts that will instantly increase your productivity."
+tags: productivity
 ---
 
 When programming, or even just using my computer, I try to avoid using mouse as much as possible and do everything I can with just keyboard. It is just so much faster and convenient to keep your hands on the keyboard and not have to switch between keyboard and mouse. I'm sure I'm not alone with this. This is where keyboard shortcuts come in.
@@ -89,8 +92,6 @@ Refresh current webpage.
 Perform a "hard" refresh on a current webpage. This refresh is different from a normal refresh by the fact that it will download all the page assets (javascript, images, styles...) from the server even if they are cached.
 
 ---
-
-
 
 ## Wrapping up
 

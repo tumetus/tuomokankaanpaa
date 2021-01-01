@@ -1,6 +1,9 @@
 ---
 title: "Online code editor every web developer should know about"
 date: "2018-06-27"
+description: "When it comes to quickly prototyping a feature or sharing a component online code editor called ... is the tool for me! I have also found it great when..."
+excerpt: "When it comes to quickly prototyping a feature or sharing a component online code editor called codesandbox.io is the tool for me! I have also found it great when..."
+tags: web development
 ---
 
 Have you ever gotten a great coding idea or wanted to just quickly prototype some component or feature? I know I have.
@@ -40,8 +43,6 @@ Codesandbox.io offers also a "lightweight" version of their editor that is used 
 Codesandbox.io is free to use. Free version comes with some limitations and they offer paid version through the [patron page](https://codesandbox.io/patron). Currently the free plan has following limitations:
 
 ![codesandbox.io plans](./images/Screen-Shot-2018-06-27-at-13.44.12-300x216.png)
-
-
 
 ## Conclusion
 

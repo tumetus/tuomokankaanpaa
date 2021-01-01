@@ -2,6 +2,9 @@
 title: "How to create modal dialog with React"
 date: "2019-04-02"
 coverImage: "moda-dialog-react-feature.jpg"
+description: "How to create modal dialog with React? This tutorial will show you just that! You will also get a finished component you can use right away."
+excerpt: "How to create modal dialog with React? This tutorial will show you just that! You will also get a finished component you can use right away."
+tags: javascript, react, web development
 ---
 
 I often run into a question "How to create modal dialog with React". Modal dialogs are also something that I need to use from time to time in my own projects. So I thought that I'd share a simple re-usable Modal component with you guys and hopefully it might be of help for some of you. So let's get to it!

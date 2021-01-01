@@ -2,6 +2,9 @@
 title: "Rich text editing in React with Draft.js - Course"
 date: "2019-06-06"
 coverImage: "NEW-ONLINE-COURSE.png"
+description: "Do you want to add rich text to your React application? Draft.js is great way to do that but it can be difficult to get started. Not after this course! You learn all the basics of Draft.js on the course."
+excerpt: "Do you want to add rich text to your React application? Draft.js is great way to do that but it can be difficult to get started. Not after this course! You learn all the basics of Draft.js on the course."
+tags: draft.js, course, javascript, web development
 ---
 
 I am excited to announce that the course "Rich text editing in React with Draft.js" is now LIVE! It is an online course that I created. It is something that I have been working on quite a bit lately. The course is basics course for Draft.js so if you are not yet familiar with the basics of Draft.js, this course is for you!

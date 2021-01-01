@@ -2,6 +2,9 @@
 title: "Rome - New All-in-one Javascript Toolchain"
 date: "2020-04-08"
 coverImage: "rome-js-wide.jpg"
+description: "Facebook just introduced a new experimental javascript toolchain tool called Rome. It doesn’t use any third-party dependencies."
+excerpt: "Facebook just introduced a new experimental javascript toolchain tool called Rome. It doesn’t use any third-party dependencies."
+tags: javascript, web development
 ---
 
 ![Rome js](./images/rome-js.jpg)

@@ -47,7 +47,7 @@ export default function Blog({ allPostsData }) {
 
 const PostCard = ({ post }: { post: Post }) => {
   const { title, slug, date, tags, excerpt, coverImage } = post;
-  // const coverImageFullPath = `/blog/${slug}/images/${coverImage}`;
+  const tagsArray = tags ? tags.split(",").map((s) => s.trim()) : [];
   return (
     <li
       className={css(`

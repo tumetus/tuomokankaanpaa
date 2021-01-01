@@ -2,6 +2,9 @@
 title: "How to write Javascript and React with VS Code FASTER!"
 date: "2020-07-09"
 coverImage: "feature-image.jpg"
+description: "If you are using VS Code to write React or Javascript code, you must use this tool! It will save you massive amounts of time and effort."
+excerpt: "If you are using VS Code to write React or Javascript code, you must use this tool! It will save you massive amounts of time and effort."
+tags: javascript, web development, youtube
 ---
 
 If you are using VS Code to write Javascript or React code, keep reading!

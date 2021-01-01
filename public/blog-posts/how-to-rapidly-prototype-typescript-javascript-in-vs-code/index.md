@@ -2,6 +2,9 @@
 title: "How to rapidly prototype Typescript & Javascript in VS Code"
 date: "2020-11-24"
 coverImage: "feature-quokka.jpg"
+description: "If you are using VS Code for writing Typescript / Javascript, you know that sometimes quick prototyping or testing is needed."
+excerpt: "If you are using VS Code for writing Typescript / Javascript, you know that sometimes quick prototyping or testing is needed."
+tags: javascript, productivity, typescript, vs code, web development
 ---
 
 Visual Studio Code is one of the most popular code editors for writing Typescript and Javascript. I use VS Code for all my Typescript and Javascript projects.

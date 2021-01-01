@@ -2,6 +2,9 @@
 title: "Before you use JavaScript ES6 Arrow Functions... WATCH THIS!"
 date: "2020-05-29"
 coverImage: "arrow-functions-blog-cover.jpg"
+description: "If you use JavaScript and want to do modern web development, JavaScript arrow functions are something you need to understand inside out."
+excerpt: "If you use JavaScript and want to do modern web development, JavaScript arrow functions are something you need to understand inside out."
+tags: javascript, web development, youtube
 ---
 
 Are you using JavaScript and maybe even JavaScript arrow functions but you are not quite sure what they are or how they work or what is the difference between arrow and normal functions.

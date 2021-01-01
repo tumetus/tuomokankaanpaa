@@ -1,6 +1,10 @@
 ---
 title: "How to store Draft.js content"
 date: "2018-04-04"
+coverImage: "cover.jpg"
+description: "In this article I teach you how to store Draft.js content."
+excerpt: "In this article I teach you how to store Draft.js content."
+tags: draft.js, javascript, react, web development
 ---
 
 [Earlier I wrote](/blog/how-to-display-draft-js-content-as-html/) about Draft.js and how to display editor content as HTML. Most often just showing the current editor content as HTML is not sufficient and we need to store the editor content somewhere for example to a database. The HTML representation of the editor content can of course be stored to a database, but that is not the best option.

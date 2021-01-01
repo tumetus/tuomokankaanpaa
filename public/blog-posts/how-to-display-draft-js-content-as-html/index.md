@@ -1,6 +1,10 @@
 ---
 title: "How to display Draft.js content as HTML"
 date: "2018-11-28"
+coverImage: "cover.jpg"
+description: "It can be little unclear what you should do when you want to display your draft js content as HTML. In this post we will learn best way to do that..."
+excerpt: "It can be little unclear what you should do when you want to display your draft js content as HTML. In this post we will learn best way to do that..."
+tags: draft.js, javascript, react, web development
 ---
 
 _This post was originally published 1.4.2018._

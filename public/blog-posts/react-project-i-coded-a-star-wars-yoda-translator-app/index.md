@@ -2,6 +2,9 @@
 title: "React project: I Coded a Star Wars Yoda Translator App"
 date: "2020-09-29"
 coverImage: "feature-image.jpg"
+description: "In this React project you learn how to create a simple React application and how to use a REST API with React in your next React project."
+excerpt: "In this React project you learn how to create a simple React application and how to use a REST API with React in your next React project."
+tags: react, javascript, web development, youtube
 ---
 
 I like Star Wars movies, I like Yoda and I like [coding in React](/blog/react-for-beginners-complete-guide-to-mastering-react-fundamentals/). Well I thought that maybe I could combine these three in my next React project. That's when I got the idea to create a React application that can translate English to Yoda (yodish).

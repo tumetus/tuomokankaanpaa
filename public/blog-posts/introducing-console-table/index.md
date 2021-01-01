@@ -1,6 +1,9 @@
 ---
 title: "Introducing console.table()"
 date: "2018-08-01"
+description: "When debugging Javascript applications chances are you sometimes use console.log(). There is a better way tho..."
+excerpt: "When debugging Javascript applications chances are you sometimes use console.log(). There is a better way tho..."
+tags: javascript
 ---
 
 When working with Javascript applications chances are you sometimes use console.log() when debugging your application. It is fast way to view data in the console and get an idea how your application is working. Most often the data is some kind of an object or array. When logging these to console you don't always see all the data and have to click the object open quite a bit and you end up something like this:

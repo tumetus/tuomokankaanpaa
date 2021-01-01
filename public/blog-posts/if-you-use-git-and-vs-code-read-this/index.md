@@ -2,6 +2,9 @@
 title: "If you use Git and VS Code - Read This!"
 date: "2020-05-02"
 coverImage: "vs-code-new-feature-git.png"
+description: "If you are using Git as your version control and VS Code as your code editor, you will love this new VS Code feature! The feature is..."
+excerpt: "If you are using Git as your version control and VS Code as your code editor, you will love this new VS Code feature! The feature is..."
+tags: git, vscode, web development
 ---
 
 [![If you use GIT and VS Code... WATCH THIS!](http://img.youtube.com/vi/WotbsEIjqrs/0.jpg)](http://www.youtube.com/watch?v=WotbsEIjqrs)

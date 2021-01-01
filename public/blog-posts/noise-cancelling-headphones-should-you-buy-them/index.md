@@ -2,6 +2,9 @@
 title: "Noise cancelling headphones - Should you buy them?"
 date: "2018-08-15"
 coverImage: "open-office-headphones.jpg"
+description: "Do you know the feeling when you are working on something that requires your full attention. Then something happens around you, phone ringing or people starting a conversation, and this breaks your concentration. That was common for me up until about 18 months ago. That's when I discovered noise cancelling headphones."
+excerpt: "Do you know the feeling when you are working on something that requires your full attention. Then something happens around you, phone ringing or people starting a conversation, and this breaks your concentration. That was common for me up until about 18 months ago. That's when I discovered noise cancelling headphones."
+tags: equipment, productivity
 ---
 
 ![Noise cancelling headphones in use](./images/open-office-headphones.jpg)

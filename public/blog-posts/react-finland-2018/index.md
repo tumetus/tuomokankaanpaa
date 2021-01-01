@@ -2,6 +2,9 @@
 title: "React Finland 2018"
 date: "2018-06-05"
 coverImage: "react-finland.jpg"
+description: "Short summary of React 2018."
+excerpt: "Short summary of React 2018."
+tags: events, javascript, react
 ---
 
 I know this comes a way late, but I had written this short summary, about my experience in React Finland, right after the conference but just didn't get around to finish and publish it. So I'm doing it now.

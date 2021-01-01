@@ -2,6 +2,9 @@
 title: "How To Use CSS Modules With create-react-app"
 date: "2019-10-22"
 coverImage: "existence.png"
+description: "CSS Modules are supported with create-react-app out of the box. There is however a catch to know in order to get your CSS Modules working in your project."
+excerpt: "CSS Modules are supported with create-react-app out of the box. There is however a catch to know in order to get your CSS Modules working in your project."
+tags: javascript, react, web development
 ---
 
 In order to use [CSS Modules](https://github.com/css-modules/css-modules) in your Javascript project you usually need to do some configuring. Luckily this is not the case when you are using [create-react-app](https://github.com/facebook/create-react-app). CSS Modules are supported with create-react-app out of the box. There is however a catch that you need to know in order to get your CSS Modules working in your create-react-app project.

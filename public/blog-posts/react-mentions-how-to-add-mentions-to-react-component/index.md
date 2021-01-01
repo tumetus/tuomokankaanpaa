@@ -2,6 +2,9 @@
 title: "React Mentions - How to Add Mentions to React Component"
 date: "2020-04-25"
 coverImage: "react-mentions-blogpost-fimg.png"
+description: "I teach step by step how you can use React, Draft.js and Draft.js plugins to create text input component that has a mentions functionality."
+excerpt: "I teach step by step how you can use React, Draft.js and Draft.js plugins to create text input component that has a mentions functionality."
+tags: draft.js, javascript, react
 ---
 
 [![How to add MENTIONS to React.js Text Input Component (w/ Draft.js)](http://img.youtube.com/vi/gDWoQwyI4Vk/0.jpg)](http://www.youtube.com/watch?v=gDWoQwyI4Vk)

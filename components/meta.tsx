@@ -34,6 +34,7 @@ const Meta: FunctionComponent<MetaProps> = ({
   ogImage = "/images/tuomokankaanpaa.jpg",
   children,
 }) => {
+  ogImage = ogImage != null ? ogImage : "/images/tuomokankaanpaa.jpg";
   return (
     <Head>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />

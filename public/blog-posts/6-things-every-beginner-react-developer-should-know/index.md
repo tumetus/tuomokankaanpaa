@@ -2,6 +2,8 @@
 title: "6 things every beginner React developer should know"
 date: "2018-12-27"
 coverImage: "react-logo.png"
+description: "Looking for React beginner tips? You are in right place! These six things are something that every React developer should know about. Number one:..."
+excerpt: "Looking for React beginner tips? You are in right place! These six things are something that every React developer should know about. Number one:..."
 ---
 
 Here is a list of React tips and things that I think especially beginner React developers will find useful. I have found that many of these are often misused or people don't know about them. So let's dive right in.

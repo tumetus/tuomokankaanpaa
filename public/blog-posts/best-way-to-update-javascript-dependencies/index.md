@@ -2,6 +2,9 @@
 title: "Best way to update Javascript dependencies"
 date: "2018-10-09"
 coverImage: "javascript-logo-wide.png"
+description: "How to update javascript dependencies in package.json? The easiest way to do it is..."
+excerpt: "How to update javascript dependencies in package.json? The easiest way to do it is..."
+tags: javascript, web development
 ---
 
 In Javascript projects it is important to keep your dependencies up to date. Updating dependencies should be done regularly so you don't end up in a situation where you have all your packages several major versions old. So what is the best way to update javascript dependencies? I like to use `yarn updgrade-interactive`.

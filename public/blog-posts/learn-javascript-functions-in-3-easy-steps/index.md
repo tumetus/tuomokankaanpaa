@@ -2,6 +2,9 @@
 title: "Learn JavaScript Functions in 3 Easy Steps"
 date: "2020-05-21"
 coverImage: "blog-cover.jpg"
+description: "Learn what JavaScript functions are, why and how to use them and also how you can use parameters to customise your functions."
+excerpt: "Learn what JavaScript functions are, why and how to use them and also how you can use parameters to customise your functions."
+tags: javascript, youtube
 ---
 
 Are you struggling with understanding functions and function parameters? I just uploaded a video where I teach you what JavaScript functions are, why and how to use them and also how you can use parameters to customise your functions.

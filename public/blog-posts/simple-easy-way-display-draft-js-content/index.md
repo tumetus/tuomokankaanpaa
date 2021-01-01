@@ -1,6 +1,10 @@
 ---
 title: "Simple and easy way to display Draft.js content"
 date: "2018-11-13"
+coverImage: "cover.jpg"
+description: "There is little information on how to actually display Draft.js content. Here is simple and easy way to display saved Draft.js content!"
+excerpt: "There is little information on how to actually display Draft.js content. Here is simple and easy way to display saved Draft.js content!"
+tags: draft.js, react, javascript, web development
 ---
 
 When looking through Draft.js docs there is much talk about how you can modify the editor's state in many different ways. Draft.js also provides us with `convertToRaw` function that we can use to convert the state to plain JSON. But there is little information on how to actually display Draft.js content. Do you need to implement some custom parsing for the state JSON? Or is there some existing library or way to take the state JSON and display it nicely?

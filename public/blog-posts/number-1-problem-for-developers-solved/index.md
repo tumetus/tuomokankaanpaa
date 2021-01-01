@@ -2,6 +2,9 @@
 title: "Number #1 Problem for Developers - Solved!"
 date: "2020-05-09"
 coverImage: "hardest-thing-developer.png"
+description: "This is very common developer problem. But the funny thing is that developers don't even realise this being a problem and thus are not looking for solution!"
+excerpt: "This is very common developer problem. But the funny thing is that developers don't even realise this being a problem and thus are not looking for solution!"
+tags: javascript, web development
 ---
 
 One of the most difficult things in programming is coming up with variable names. If the situation is even a bit more complex, I always end up either coming up with bad non-describing name or just taking way too much time thinking of the name.

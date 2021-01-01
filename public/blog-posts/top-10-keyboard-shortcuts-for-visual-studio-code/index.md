@@ -2,6 +2,9 @@
 title: "Top 10 Keyboard Shortcuts for Visual Studio Code"
 date: "2020-06-11"
 coverImage: "feature-image-3.jpg"
+description: "Here I share my top 10 keyboard shortcuts for Visual Studio Code that I use daily. These are something that every Visual Studio Code user should know."
+excerpt: "Here I share my top 10 keyboard shortcuts for Visual Studio Code that I use daily. These are something that every Visual Studio Code user should know."
+tags: productivity, vscode, web development, youtube
 ---
 
 Visual Studio Code is a great code editor. I have been using it few years now and I love it! In that time I have picked up few keyboard shortcuts that I use daily. I think these keyboard shortcuts are worth knowing, I decided to share it with you guys!

@@ -2,6 +2,9 @@
 title: "VS Code Stories - New Extension"
 date: "2020-10-30"
 coverImage: "vscode-stories-feature-img.jpg"
+description: 'Have you ever thought to yourself "It would be awesome to have Instagram like stories in VS Code". Wonder no more, it is now a reality!'
+excerpt: 'Have you ever thought to yourself "It would be awesome to have Instagram like stories in VS Code". Wonder no more, it is now a reality!'
+tags: vs code, web development,
 ---
 
 _Do you ever just wake up in the morning, open up VS Code, and think to yourself "Wow I wonder what other coders are doing around the world, what are they coding on?"._

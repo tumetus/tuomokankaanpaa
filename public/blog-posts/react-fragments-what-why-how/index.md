@@ -2,6 +2,9 @@
 title: "React Fragments - What, Why, How"
 date: "2019-10-05"
 coverImage: "react-fragments-feature-image.png"
+description: "What are React Fragments? How to use them and what are the advantages of using fragments? This article will answer these questions."
+excerpt: "What are React Fragments? How to use them and what are the advantages of using fragments? This article will answer these questions."
+tags: react, javascript, web development
 ---
 
 [![React Fragments - What, Why, How](http://img.youtube.com/vi/gbONLMqrUxI/0.jpg)](http://www.youtube.com/watch?v=gbONLMqrUxI)

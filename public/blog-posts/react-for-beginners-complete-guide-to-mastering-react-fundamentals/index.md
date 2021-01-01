@@ -2,6 +2,9 @@
 title: "React for Beginners: Complete Guide to Mastering React Fundamentals"
 date: "2020-04-15"
 coverImage: "react-basic-course-thumb.png"
+description: "If you know JavaScript but you are not yet familiar with React fundamentals, you are in the right place! This is a must watch for every web developer."
+excerpt: "If you know JavaScript but you are not yet familiar with React fundamentals, you are in the right place! This is a must watch for every web developer."
+tags: react, course, javascript, web development
 ---
 
 [

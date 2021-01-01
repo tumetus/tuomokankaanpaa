@@ -2,6 +2,9 @@
 title: "Getting started with Draft.js"
 date: "2018-09-03"
 coverImage: "asphalt-empty-field-163444.jpg"
+description: "Getting started with Draft.js can be a bit confusing. In this post we will cover how to get started by creating an Editor component capeable for RTE."
+excerpt: "Getting started with Draft.js can be a bit confusing. In this post we will cover how to get started by creating an Editor component capeable for RTE."
+tags: draft.js, javascript, react, rich text editing
 ---
 
 [Draft.js](https://draftjs.org/) is an open source library for handling rich text editing with React.
@@ -38,14 +41,14 @@ const wrapperStyle = {
   border: "1px solid gray", // add some border
   width: "400px", // set fixed width
   margin: "auto", // aligns the component in the middle
-  textAlign: "left" // start the text from left hand side
+  textAlign: "left", // start the text from left hand side
 };
 
 class MyEditor extends Component {
   constructor(props) {
     super(props);
     this.state = { editorState: EditorState.createEmpty() };
-    this.onChange = editorState => this.setState({ editorState });
+    this.onChange = (editorState) => this.setState({ editorState });
   }
 
   render() {
@@ -87,14 +90,14 @@ const wrapperStyle = {
   border: "1px solid gray", // add some border
   width: "400px", // set fixed width
   margin: "auto", // aligns the component in the middle
-  textAlign: "left" // start the text from left hand side
+  textAlign: "left", // start the text from left hand side
 };
 
 class MyEditor extends Component {
   constructor(props) {
     super(props);
     this.state = { editorState: EditorState.createEmpty() };
-    this.onChange = editorState => this.setState({ editorState });
+    this.onChange = (editorState) => this.setState({ editorState });
     this.handleKeyCommand = this.handleKeyCommand.bind(this);
   }
 

@@ -1,6 +1,9 @@
 ---
 title: "Setup Flow with Visual Studio Code"
 date: "2018-07-18"
+description: "When first time using flow, many people use it through terminal. This is fine but there is a better way to implement Flow to your workflow. In this post I will cover how to setup Flow extension for Visual Studio Code."
+excerpt: "When first time using flow, many people use it through terminal. This is fine but there is a better way to implement Flow to your workflow. In this post I will cover how to setup Flow extension for Visual Studio Code."
+tags: flow, type checking, javascript, web development
 ---
 
 [When first time using flow](/blog/my-first-time-using-flow-for-static-type-checking/), many people use it through terminal. This is fine but there is a better way to implement Flow to your workflow. Many modern text editors and IDEs like Visual Studio Code and Atom offer extension for Flow that runs the Flow checks every time for example a file is saved and displays the errors right at the editor.

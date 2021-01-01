@@ -2,6 +2,9 @@
 title: "Want to Learn Web Development and Like YouTube Videos? Read This!"
 date: "2020-05-16"
 coverImage: "Web-Development.png"
+description: "Best ways to learn web development is through YouTube videos. I have many years of experience in web development and I have a YouTube channel for you!"
+excerpt: "Best ways to learn web development is through YouTube videos. I have many years of experience in web development and I have a YouTube channel for you!"
+tags: web development, youtube
 ---
 
 ![Tuomo Kankaanpää Youtube channel](./images/Web-Development.png)

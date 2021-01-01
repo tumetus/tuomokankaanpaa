@@ -2,6 +2,9 @@
 title: "How to add GitHub Profile README (new feature)"
 date: "2020-07-16"
 coverImage: "blogcover-github-profile-readme.jpg"
+description: "GitHub profile README is here! This is an awesome feature and every developer needs to use it! Learn now how to add readme file to your own GitHub profile!"
+excerpt: "GitHub profile README is here! This is an awesome feature and every developer needs to use it! Learn now how to add readme file to your own GitHub profile!"
+tags: web development, github, youtube
 ---
 
 GitHub released a new feature few days ago: GitHub profile readme! You can now add a readme file to be displayed on your GitHub profile page.

@@ -2,6 +2,9 @@
 title: "My first time using Flow for Static Type Checking"
 date: "2018-07-04"
 coverImage: "flow-1200x630-1.png"
+description: "This was my first time using Flow type checking in a javascript project. Here are some of my experiences of it."
+excerpt: "This was my first time using Flow type checking in a javascript project. Here are some of my experiences of it."
+tags: javascript, typescript, flow, type checking
 ---
 
 ![Flow image](./images/flow-1200x630-1.png)

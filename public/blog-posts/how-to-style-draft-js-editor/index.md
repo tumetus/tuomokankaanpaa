@@ -2,6 +2,9 @@
 title: "How to style Draft.js editor"
 date: "2019-06-16"
 coverImage: "Oakbur-Quill-Co..png"
+description: "In this post we will take a look how to style Draft.js editor component. How to make the editor multiline, scrollable, add borders and background."
+excerpt: "In this post we will take a look how to style Draft.js editor component. How to make the editor multiline, scrollable, add borders and background."
+tags: draft.js, javascript, react, web development
 ---
 
 In this post we will take a look how you can style your Draft.js editor component. We will make the editor multiline, scrollable and add background and border styles. Draft.js itself does not provide any default styling for the editor and thus the styling of the editor has been left completely for the user. However it might be a bit unclear how to style Draft.js editor so that is what we will learn in this post.

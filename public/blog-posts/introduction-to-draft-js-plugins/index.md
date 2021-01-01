@@ -2,6 +2,9 @@
 title: "Introduction to draft-js-plugins"
 date: "2018-12-19"
 coverImage: "draft-js-plugins-big-canvas.png"
+description: "Do you want to add Slack-like emojis, Facebook-like stickers or mentions to your React application? In that case you should..."
+excerpt: "Do you want to add Slack-like emojis, Facebook-like stickers or mentions to your React application? In that case you should..."
+tags: draft.js, javascript, react, web development
 ---
 
 When you start to use Draft.js you quickly realize that it doesn't come with a lot of ready to use features or utilities. Yes, you can build e.g. a toolbar with rich text editing features but there is not one ready for you to use in Draft.js.

@@ -2,6 +2,9 @@
 title: "Best extensions for VS Code in 2020"
 date: "2020-04-01"
 coverImage: "best-vs-code-extensions-2020.png"
+description: "Here is my top picks for the best VS Code extensions in 2020. These are a must have for every web developer using VS Code."
+excerpt: "Here is my top picks for the best VS Code extensions in 2020. These are a must have for every web developer using VS Code."
+tags: productivity, web development, vscode
 ---
 
 A while back I shared my favourite VS Code extensions exclusively to the [CodePulse newsletter](/newsletter) subscribers. I now decided to share them with all of you!
@@ -42,6 +45,6 @@ For me this is in some projects a lifesaver. When you need to make your bundle a
 
 You can find it from the Visual Studio Marketplace: [https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
 
-* * *
+---
 
 Do you think I missed some? Comment below your favourite extensions!

@@ -2,6 +2,9 @@
 title: "GraphQL Finland 2018"
 date: "2018-10-30"
 coverImage: "graph-ql-feature-img.png"
+description: "GraphQL Finland which was held little over a week ago (Thursday & Friday 18-19.10.2018) in Helsinki at Paasitorni. I think the workshops and talks were..."
+excerpt: "GraphQL Finland which was held little over a week ago (Thursday & Friday 18-19.10.2018) in Helsinki at Paasitorni. I think the workshops and talks were..."
+tags: events, graphql
 ---
 
 I attended GraphQL Finland which was held little over a week ago (Thursday & Friday 18-19.10.2018) in Helsinki at Paasitorni. The first day was for workshops and the second day for the actual conference. So the structure was similar for [React Finland](/blog/react-finland-2018/) with the difference that React Finland had two days of talks instead of one.

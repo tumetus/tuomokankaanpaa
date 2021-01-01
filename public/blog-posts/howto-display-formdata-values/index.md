@@ -1,6 +1,9 @@
 ---
 title: "How to display FormData object values in Javascript"
 date: "2019-05-25"
+description: "If you want to see the values of FormData object, console.log does not work. Instead you need to use a property provided by FormData to inspect the values."
+excerpt: "If you want to see the values of FormData object, console.log does not work. Instead you need to use a property provided by FormData to inspect the values."
+tags: javascript, web development
 ---
 
 If you are working with Javascript and sending data to server, especially when you need to send files, you might have run into [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData) object. It is handy way to form set of key/value pairs that represent form fields and values. You will most likely run into a situation where you want to inspect your `FormData` object. Normally you could just `console.log` the object, but this doesn't work with FormData object.
