@@ -49,13 +49,15 @@ const Tag = ({ tag }: { tag: string }) => {
   return (
     <span
       className={css(`
+        display: inline-block;
         border: 1px solid black;
-        margin-right: 5px;
+        margin: 3px 5px 3px 0;
         padding: 3px 5px;
         font-size: 0.7em;
+        white-space: nowrap;
       `)}
     >
-      {tag}
+      {tag.toLowerCase()}
     </span>
   );
 };
