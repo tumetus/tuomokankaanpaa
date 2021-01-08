@@ -41,7 +41,6 @@ const NavLink = ({
           text-transform: uppercase;
           font-size: 0.95rem;
           margin-right: 1rem;
-          margin-left: 0.5rem;
           border-bottom: ${isActive ? "3px solid rgba(0,0,0,0.5)" : "none"};
           padding-bottom: ${isActive ? "3px" : "none"};
         `)}
