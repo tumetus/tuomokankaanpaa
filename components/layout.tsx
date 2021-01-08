@@ -34,7 +34,7 @@ export default function Layout({
               margin: 0;
 
               @media (max-width: ${SMALL}px) {
-                font-size: 2.25rem;
+                font-size: 2rem;
               }
             `)}
           >
