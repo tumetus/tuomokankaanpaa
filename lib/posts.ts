@@ -27,7 +27,7 @@ const getFolderNames = (source: string) =>
     .filter((dirent) => dirent.isDirectory())
     .map((dirent) => dirent.name);
 
-export async function getSortedPostsData() {
+export async function getSortedPostsData(): Promise<Post[]> {
   const data: Array<string> = getFolderNames(postsDirectory);
 
   let promises = [];
@@ -55,6 +55,23 @@ export function getAllPostSlugs() {
       },
     };
   });
+}
+
+export async function getNextAndPrevPost(slug: string) {
+  const posts: Array<Post> = await getSortedPostsData();
+  let prev = null;
+  let next = null;
+
+  for (let i = 0; i < posts.length; i++) {
+    const cur = posts[i];
+    if (cur.slug == slug) {
+      prev = i !== 0 ? posts[i - 1] : null;
+      next = i + 1 < posts.length ? posts[i + 1] : null;
+      break;
+    }
+  }
+
+  return { previous: prev, next };
 }
 
 export async function getPostData(slug: string): Promise<Post> {
