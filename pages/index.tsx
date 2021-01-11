@@ -40,9 +40,8 @@ export default function Home() {
         <div>
           <h2>Ahoy, I'm Tuomo!</h2>
           <p>
-            I'm a Fullstack Web Developer and teacher. I work a lot with
-            Javascript and React so if those are your poisons too, do browser
-            around!
+            I'm a Fullstack Web Developer and teacher. I like to work with and
+            teach React and Javascript.
           </p>
           <p>I also do card magic.</p>
           <p

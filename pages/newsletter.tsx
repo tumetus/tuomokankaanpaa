@@ -7,8 +7,9 @@ export default function Newsletter() {
     <Layout activePage={"newsletter"}>
       <h1>Newsletter</h1>
       <p>
-        Subscribe to stay learn more about web development. I usually send email
-        once or twice a month. You can unsubscribe anytime you want.
+        Subscribe to learn more about web development including React and
+        Javascript. I usually send email once or twice a month. You can
+        unsubscribe anytime you want.
       </p>
       <p>Here is what you get when you subscribe:</p>
       <ul>
