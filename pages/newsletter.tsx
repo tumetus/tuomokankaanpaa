@@ -17,14 +17,14 @@ export default function Newsletter() {
           Exclusive React, Javascript and web development content straight to
           your inbox
         </li>
-        <li>Information about new CodePulse blog posts and videos</li>
+        <li>Information about new blog posts and videos</li>
         <li>
-          Earlybird access and discount codes to new CodePulse{" "}
+          Earlybird access and discount codes to my{" "}
           <Link href="/courses">
             <a>courses</a>
           </Link>
         </li>
-        <li>Be part of CodePulse community</li>
+        <li>Developer soft skill tips</li>
       </ul>
       <NewsletterBanner />
     </Layout>
