@@ -12,6 +12,7 @@ export default function Blog({ allPostsData }) {
   let [searchText, setSearchText] = useState("");
   return (
     <Layout activePage={"blog"}>
+      <h1>Blog</h1>
       <div>
         <input
           className={css(`
@@ -26,7 +27,7 @@ export default function Blog({ allPostsData }) {
           type="text"
           onChange={(e) => setSearchText(e.target.value)}
           value={searchText}
-          placeholder="Search..."
+          placeholder="Search blog posts..."
         />
       </div>
       <ul

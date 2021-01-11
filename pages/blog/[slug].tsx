@@ -13,6 +13,7 @@ import Date from "../../components/date";
 import { Post } from "../../common/types";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus as codeSyntaxTheme } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import NewsletterBanner from "../../components/newsletter-banner";
 
 export default function BlogPost({
   postData,
@@ -122,6 +123,16 @@ export default function BlogPost({
           subscribe on Youtube
         </a>
         !
+      </section>
+      <hr
+        className={css(`
+          margin-top: 1.5rem;
+          width: 50%;
+          opacity: 0.5;
+        `)}
+      ></hr>
+      <section className={css(`padding-top:1.5rem;`)}>
+        <NewsletterBanner />
       </section>
     </Layout>
   );

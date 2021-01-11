@@ -8,8 +8,14 @@ const NewsletterBanner = () => {
 
   // return <div>Newsletter subscription form will be here.</div>;
   return (
-    <>
-      <h3>Subscribe to the newsletter</h3>
+    <div
+      className={css(`
+        border: 1px solid gray;
+        padding: 25px;
+        opacity: 0.85;
+      `)}
+    >
+      <h3 className={css(`margin:0;`)}>Subscribe to the newsletter</h3>
       <form method="post" action="https://www.aweber.com/scripts/addlead.pl">
         <input type="hidden" name="listname" value="awlist5344567" />
         <input
@@ -61,7 +67,7 @@ const NewsletterBanner = () => {
           Subscribe
         </Button>
       </form>
-    </>
+    </div>
   );
 };
 
