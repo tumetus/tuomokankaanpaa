@@ -21,7 +21,7 @@ const NewsletterBanner = () => {
         <input
           type="hidden"
           name="redirect"
-          value="https://tuomokankaanpaa.vercel.app/newsletter-confirmation-email"
+          value="https://www.tuomokankaanpaa.com/newsletter-confirmation-email"
         />
         <input type="hidden" name="meta_message" value="1" />
         <input type="hidden" name="meta_required" value="email" />
