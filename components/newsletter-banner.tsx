@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { css } from "@emotion/css";
+import Button from "@material-ui/core/Button";
 
 const NewsletterBanner = () => {
-  let [name, setName] = useState("");
+  // let [name, setName] = useState("");
   let [email, setEmail] = useState("");
 
   // return <div>Newsletter subscription form will be here.</div>;
@@ -12,7 +14,7 @@ const NewsletterBanner = () => {
         <input
           type="hidden"
           name="redirect"
-          value="https://www.codepulse.blog"
+          value="https://www.tuomokankaanpaa.com/newsletter-confirmation-email"
         />
         <input type="hidden" name="meta_message" value="1" />
         <input type="hidden" name="meta_required" value="email" />
@@ -21,23 +23,42 @@ const NewsletterBanner = () => {
           type="hidden"
           id="aweber_tags"
           name="aweber_tags"
-          value="ebook-subscriber"
+          value="newsletter-subscriber"
         ></input>
-        <input
+        {/* <input
           type="text"
           name="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />{" "}
-        Name
+        Name */}
         <input
+          className={css(`
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 1.25rem;
+            ::placeholder {
+              opacity: 0.4;
+            }
+          `)}
           type="text"
           name="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-        />{" "}
-        Email
-        <input type="submit" name="submit" value="Subscribe" />
+          placeholder="Enter your email here"
+        />
+        <Button
+          variant="contained"
+          style={{
+            backgroundColor: "#0070f3",
+            color: "#fff",
+            marginTop: "10px",
+          }}
+          type="submit"
+        >
+          Subscribe
+        </Button>
       </form>
     </>
   );

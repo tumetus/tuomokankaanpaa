@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 
-export default function Newsletter() {
+export default function NewsletterConfirmationEmail() {
   return (
     <Layout activePage={"newsletter"}>
       <h1>You are almost done!</h1>
