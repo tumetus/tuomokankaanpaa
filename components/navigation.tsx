@@ -20,6 +20,11 @@ const Navigation = ({ activePage }: { activePage: ActivePage }) => {
         text="Newsletter"
         isActive={activePage == "newsletter" ? true : false}
       />
+      <NavLink
+        href="/contact"
+        text="Contact"
+        isActive={activePage == "contact" ? true : false}
+      />
     </>
   );
 };

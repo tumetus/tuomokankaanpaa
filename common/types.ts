@@ -10,4 +10,4 @@ export interface Post {
   description: string; // used for meta and og descriptions
 }
 
-export type ActivePage = "blog" | "courses" | "newsletter";
+export type ActivePage = "blog" | "courses" | "newsletter" | "contact";
