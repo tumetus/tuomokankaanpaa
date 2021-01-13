@@ -48,6 +48,7 @@ const NavLink = ({
           margin-right: 1rem;
           border-bottom: ${isActive ? "3px solid rgba(0,0,0,0.5)" : "none"};
           padding-bottom: ${isActive ? "3px" : "none"};
+          display: inline-block;
         `)}
       >
         {text}
