@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Footer from "../components/footer";
 
 export default function NewsletterConfirmationEmail() {
   return (
@@ -13,6 +14,7 @@ export default function NewsletterConfirmationEmail() {
         the link in that email. You will not receive your emails until you click
         that link in the email.
       </p>
+      <Footer />
     </Layout>
   );
 }

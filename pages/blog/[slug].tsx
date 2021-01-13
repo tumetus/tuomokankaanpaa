@@ -14,6 +14,7 @@ import { Post } from "../../common/types";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus as codeSyntaxTheme } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import NewsletterBanner from "../../components/newsletter-banner";
+import Footer from "../../components/footer";
 
 export default function BlogPost({
   postData,
@@ -134,6 +135,7 @@ export default function BlogPost({
       <section className={css(`padding-top:1.5rem;`)}>
         <NewsletterBanner />
       </section>
+      <Footer />
     </Layout>
   );
 }

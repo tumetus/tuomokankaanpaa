@@ -7,6 +7,7 @@ import Layout from "../../components/layout";
 import Date from "../../components/date";
 import { getSortedPostsData } from "../../lib/posts";
 import { Post } from "../../common/types";
+import Footer from "../../components/footer";
 
 export default function Blog({ allPostsData }) {
   let [searchText, setSearchText] = useState("");
@@ -42,6 +43,7 @@ export default function Blog({ allPostsData }) {
             getIncludePost(searchText, p) && <PostCard key={p.slug} post={p} />
         )}
       </ul>
+      <Footer />
     </Layout>
   );
 }

@@ -1,6 +1,7 @@
 import { css } from "@emotion/css";
 import Button from "@material-ui/core/Button";
 import Layout from "../components/layout";
+import Footer from "../components/footer";
 
 const EnrollButton = (props) => {
   return (
@@ -150,6 +151,7 @@ export default function Courses() {
           Buy this course
         </EnrollButton>
       </section>
+      <Footer />
     </Layout>
   );
 }

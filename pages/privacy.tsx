@@ -1,4 +1,5 @@
 import Layout from "../components/layout";
+import Footer from "../components/footer";
 
 export default function Privacy() {
   return (
@@ -131,6 +132,7 @@ export default function Privacy() {
         By using our website, you hereby consent to our Privacy Policy and agree
         to its Terms and Conditions.
       </p>
+      <Footer />
     </Layout>
   );
 }

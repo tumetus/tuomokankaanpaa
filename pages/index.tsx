@@ -7,6 +7,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 import Layout from "../components/layout";
+import Footer from "../components/footer";
 import { SMALL } from "../common/screen-sizes";
 
 export default function Home() {
@@ -80,6 +81,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 }

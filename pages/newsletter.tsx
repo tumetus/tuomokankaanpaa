@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Layout from "../components/layout";
 import NewsletterBanner from "../components/newsletter-banner";
+import Footer from "../components/footer";
 
 export default function Newsletter() {
   return (
@@ -27,6 +28,7 @@ export default function Newsletter() {
         <li>Developer soft skill tips</li>
       </ul>
       <NewsletterBanner />
+      <Footer />
     </Layout>
   );
 }
