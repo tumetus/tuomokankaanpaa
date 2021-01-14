@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
+import Footer from "../components/footer";
 
-export default function Newsletter() {
+export default function NewsletterConfirmationEmail() {
   return (
     <Layout activePage={"newsletter"}>
       <h1>You are almost done!</h1>
@@ -13,6 +14,7 @@ export default function Newsletter() {
         the link in that email. You will not receive your emails until you click
         that link in the email.
       </p>
+      <Footer />
     </Layout>
   );
 }

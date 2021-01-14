@@ -7,11 +7,13 @@ import Layout from "../../components/layout";
 import Date from "../../components/date";
 import { getSortedPostsData } from "../../lib/posts";
 import { Post } from "../../common/types";
+import Footer from "../../components/footer";
 
 export default function Blog({ allPostsData }) {
   let [searchText, setSearchText] = useState("");
   return (
     <Layout activePage={"blog"}>
+      <h1>Blog</h1>
       <div>
         <input
           className={css(`
@@ -26,7 +28,7 @@ export default function Blog({ allPostsData }) {
           type="text"
           onChange={(e) => setSearchText(e.target.value)}
           value={searchText}
-          placeholder="Search..."
+          placeholder="Search blog posts..."
         />
       </div>
       <ul
@@ -41,6 +43,7 @@ export default function Blog({ allPostsData }) {
             getIncludePost(searchText, p) && <PostCard key={p.slug} post={p} />
         )}
       </ul>
+      <Footer />
     </Layout>
   );
 }

@@ -20,6 +20,11 @@ const Navigation = ({ activePage }: { activePage: ActivePage }) => {
         text="Newsletter"
         isActive={activePage == "newsletter" ? true : false}
       />
+      <NavLink
+        href="/contact"
+        text="Contact"
+        isActive={activePage == "contact" ? true : false}
+      />
     </>
   );
 };
@@ -43,6 +48,7 @@ const NavLink = ({
           margin-right: 1rem;
           border-bottom: ${isActive ? "3px solid rgba(0,0,0,0.5)" : "none"};
           padding-bottom: ${isActive ? "3px" : "none"};
+          display: inline-block;
         `)}
       >
         {text}
