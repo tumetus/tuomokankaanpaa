@@ -23,7 +23,7 @@ const postDirectory = path.join(
 );
 
 const mdTemplate = `---
-date: "2020-05-26"
+date: "2050-01-01"
 title: ""
 excerpt: ""
 tags: "tag1,tag2,tag3"
