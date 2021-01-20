@@ -1,9 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import { GA_TRACKING_ID } from "../utils/gtag";
+import { GA_TRACKING_ID as PROD_GA_TRACKING_ID } from "../utils/gtag";
 
 export default class MyDocument extends Document {
   render() {
+    // Use dummy ga id if not in production. Not sure if this is best way but works for now.
+    const GA_TRACKING_ID =
+      process.env.NODE_ENV === "production"
+        ? PROD_GA_TRACKING_ID
+        : "G-0000000001";
+
     return (
       <Html>
         <Head>
