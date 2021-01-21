@@ -4,7 +4,7 @@ title: "What is JAMstack"
 excerpt: "Jamstack is a modern way to build websites & apps that delivers better performance. Sounds good but why, when and how should you use it? I will try to answer those questions in this post."
 tags: "jamstack, web development"
 slug: "what-is-jamstack"
-coverImage: "cover.jpg"
+coverImage: "what-is-jamstack-thumbnail.jpg"
 description: "Jamstack is a modern way to build websites. Sounds good but why, when and how should you use it? In this post I will try to answer those questions."
 ---
 
