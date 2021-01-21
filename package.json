@@ -23,7 +23,8 @@
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.3.1",
     "remark": "^13.0.0",
-    "remark-html": "^13.0.1"
+    "remark-html": "^13.0.1",
+    "sitemap": "^6.3.5"
   },
   "devDependencies": {
     "@types/gtag.js": "^0.0.4",
