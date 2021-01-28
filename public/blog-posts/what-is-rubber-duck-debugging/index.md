@@ -14,6 +14,10 @@ If you are hearing the term first time, you might be thinking "What an earth is 
 
 Even though it sounds silly it is actually one of the best debugging techniques out there. And it works on all languages and platforms.
 
+_I also made a video on Youtube explaining what rubber duck debugging is. You can watch it [here](https://www.youtube.com/watch?v=ugegu6lSWaY) or below._
+
+[![What is rubber duck debugging](http://img.youtube.com/vi/ugegu6lSWaY/0.jpg)](http://www.youtube.com/watch?v=ugegu6lSWaY)
+
 ## Rubber duck debugging explained
 
 ![rubber duck debugging](./images/rubber-duck-sunglasses.jpg)
