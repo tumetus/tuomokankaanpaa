@@ -1,20 +1,26 @@
 ---
-date: "2050-09-14"
-title: "What is JAMstack"
-excerpt: "Jamstack is a modern way to build websites & apps that delivers better performance. Sounds good but why, when and how should you use it? I will try to answer those questions in this post."
+date: "2021-02-02"
+title: "What is JAMStack? Must know for every developer in 2021!"
+excerpt: "Jamstack is a modern way to build websites & apps that delivers better performance. Sounds good but why, when and how should you use it? I will answer those questions in this post."
 tags: "jamstack, web development"
 slug: "what-is-jamstack"
 coverImage: "what-is-jamstack-thumbnail.jpg"
-description: "Jamstack is a modern way to build websites. Sounds good but why, when and how should you use it? In this post I will try to answer those questions."
+description: "Jamstack is a modern way to build websites. Sounds good but why, when and how should you use it? In this post I will answer those questions."
 ---
 
-I first heard the term _Jamstack_ at the end of last year. Since then I have studied it and gained a basic understanding of how to actually build websites using Jamstack. (I actually updated and wrote my website using Jamstack. TODO TÄHÄ LINKKI BLOGIPOSTAUKSEEN).
+[
+![What is Jamstack - view on Youtube](./images/what-is-jamstack-thumbnail.jpg)
+](https://www.youtube.com/watch?v=S6Mtfsl17PQ)
+
+I first heard the term _Jamstack_ at the end of last year. Since then I have studied it and gained a basic understanding of how to actually build websites using Jamstack. (I actually updated and wrote [my website](https://www.tuomokankaanpaa.com) using Jamstack).
 
 In this blog post I have collected answers to the following questions
 
 - What is Jamstack?
 - What are the benefits of using Jamstack? (aka why to use it)
 - How to get started with Jamstack?
+
+_If you prefer a video over text, I created a video of this blog posts which you can watch [here](https://www.youtube.com/watch?v=S6Mtfsl17PQ)._
 
 ## What is Jamstack?
 
