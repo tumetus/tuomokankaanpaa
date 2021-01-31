@@ -1,9 +1,11 @@
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import Meta from "../components/meta";
 
 export default function Privacy() {
   return (
     <Layout>
+      <Meta title={`Privacy | Tuomo Kankaanpää`}></Meta>
       <h1>Privacy Policy for tuomokankaanpaa.com</h1>
 
       <p>

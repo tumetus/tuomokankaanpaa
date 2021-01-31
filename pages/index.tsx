@@ -152,11 +152,11 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>I do freelance work</h2>
+        <h2>I do consulting</h2>
         <p>
-          I am available for freelance work. If you need e.g. help or consulting
-          on a project, debugging help, React components or tutorial video on
-          specific topic, I am able to help.
+          If you need e.g. help or consulting on a project, debugging help,
+          React components or tutorial video on specific topic, I might be able
+          to help.
         </p>
         <p>Send me email at tuomo(a)tuomokankaanpaa.com and let's talk!</p>
       </section>

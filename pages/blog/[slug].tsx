@@ -49,8 +49,8 @@ export default function BlogPost({
   return (
     <Layout>
       <Meta
-        title={`${postData.title} - Tuomo Kankaanpää`}
-        ogTitle={`${postData.title} - Tuomo Kankaanpää`}
+        title={`${postData.title} | Tuomo Kankaanpää`}
+        ogTitle={`${postData.title} | Tuomo Kankaanpää`}
         ogType="article"
         description={postData.description}
         ogDescription={postData.description}

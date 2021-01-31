@@ -2,10 +2,12 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import NewsletterBanner from "../components/newsletter-banner";
 import Footer from "../components/footer";
+import Meta from "../components/meta";
 
 export default function Newsletter() {
   return (
     <Layout activePage={"newsletter"}>
+      <Meta title={`Newsletter | Tuomo Kankaanpää`}></Meta>
       <h1>Newsletter</h1>
       <p>
         Subscribe to learn more about web development including React and
