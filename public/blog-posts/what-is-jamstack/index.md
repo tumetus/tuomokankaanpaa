@@ -9,7 +9,7 @@ description: "Jamstack is a modern way to build websites. Sounds good but why, w
 ---
 
 [
-![What is Jamstack - view on Youtube](./images/what-is-jamstack-thumbnail.jpg)
+![What is Jamstack - view on Youtube](./images/what-is-jamstack-thumbnail-w-playbutton.jpg)
 ](https://www.youtube.com/watch?v=S6Mtfsl17PQ)
 
 I first heard the term _Jamstack_ at the end of last year. Since then I have studied it and gained a basic understanding of how to actually build websites using Jamstack. (I actually updated and wrote [my website](https://www.tuomokankaanpaa.com) using Jamstack).
