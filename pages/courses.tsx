@@ -2,6 +2,7 @@ import { css } from "@emotion/css";
 import Button from "@material-ui/core/Button";
 import Layout from "../components/layout";
 import Footer from "../components/footer";
+import Meta from "../components/meta";
 
 const EnrollButton = (props) => {
   return (
@@ -24,6 +25,7 @@ const EnrollButton = (props) => {
 export default function Courses() {
   return (
     <Layout activePage={"courses"}>
+      <Meta title={`Courses | Tuomo Kankaanpää`}></Meta>
       <h1>Courses</h1>
       <section className={css(`margin: 0 0 3rem 0;`)}>
         <p>

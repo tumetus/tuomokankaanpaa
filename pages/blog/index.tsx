@@ -8,11 +8,13 @@ import Date from "../../components/date";
 import { getSortedPostsData } from "../../lib/posts";
 import { Post } from "../../common/types";
 import Footer from "../../components/footer";
+import Meta from "../../components/meta";
 
 export default function Blog({ allPostsData }) {
   let [searchText, setSearchText] = useState("");
   return (
     <Layout activePage={"blog"}>
+      <Meta title={`Blog | Tuomo Kankaanpää`}></Meta>
       <h1>Blog</h1>
       <div>
         <input
