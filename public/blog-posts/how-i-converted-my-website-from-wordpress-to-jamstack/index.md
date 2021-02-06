@@ -10,7 +10,7 @@ description: "I converted my old Wordpress website to Jamstack. In this post I g
 
 ![How I rebuilt my website using Jamstack](./images/from-wp-to-jamstack-thumbnail.jpg)
 
-It's 2021 and it has been almost three years since I started blogging. When I started I bought a domain and webhotel from [Bluehost](https://www.bluehost.com/track/tume/bpfromwptojamstack) and build my blog on top of Wordpress. I came up with a name for my blog; codepulse.blog. To this date I have more or less consistently writed articles to that blog. But lately I got this idea that maybe it is time to update the blog a little bit.
+It's 2021 and it has been over three years since I started blogging. When I started I bought a domain and webhotel from [Bluehost](https://www.bluehost.com/track/tume/bpfromwptojamstack) and build my blog on top of Wordpress. I came up with a name for my blog; codepulse.blog. To this date I have more or less consistently writed articles to that blog. But lately I got this idea that maybe it is time to update the blog a little bit.
 
 # Desires - What I want from my new blog / website
 
