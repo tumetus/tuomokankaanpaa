@@ -1,12 +1,14 @@
 ---
-date: "2050-01-05"
+date: "2021-02-06"
 title: "How I converted my website from Wordpress to Jamstack"
-excerpt: ""
-tags: "web development"
+excerpt: "I converted my old Wordpress website to Jamstack. In this post I go through the steps of that process."
+tags: "web development, jamstack"
 slug: "how-i-converted-my-website-from-wordpress-to-jamstack"
-coverImage: "cover.jpg"
-description: "<insert meta & og description here>"
+coverImage: "from-wp-to-jamstack-thumbnail.jpg"
+description: "I converted my old Wordpress website to Jamstack. In this post I go through the steps of that process."
 ---
+
+![How I rebuilt my website using Jamstack](./images/from-wp-to-jamstack-thumbnail.jpg)
 
 It's 2021 and it has been almost three years since I started blogging. When I started I bought a domain and webhotel from [Bluehost](https://www.bluehost.com/track/tume/bpfromwptojamstack) and build my blog on top of Wordpress. I came up with a name for my blog; codepulse.blog. To this date I have more or less consistently writed articles to that blog. But lately I got this idea that maybe it is time to update the blog a little bit.
 
@@ -44,7 +46,7 @@ _See also: [Top 10 Keyboard shortcuts for Visual Studio Code in 2021](https://ww
 
 ## 3. Get rid of Wordpress and code the blog myself
 
-If I were to start blogging from scratch right now, I would definately just sign up for a shared hosting plan on a site like [Bluehost](https://www.bluehost.com/track/tume/bpfromwptojamstack) and start building my blog on top of Wordpress. (Read more on why: [Why you should NOT code your own blog when starting blogging](linkki_artikkeliin_missa_kerrotaan_trellossa_kortti_talle))
+If I were to start blogging from scratch right now, I would definately just sign up for a shared hosting plan on a site like [Bluehost](https://www.bluehost.com/track/tume/bpfromwptojamstack) and start building my blog on top of Wordpress. (Read more on why: [Why you should NOT code your own blog when starting blogging](/blog/why-you-should-not-code-your-own-blog-when-starting-blogging))
 
 But since I have been using Wordpress for couple of years now, there is some aspects that when starting blogging out, are totally fine, but have grown on me over the time and resulted for my desire to switch away from Wordpress and code the blog by myself.
 
@@ -235,3 +237,5 @@ I think that because the project I built was a website for myself and I knew tha
 If you enjoyed this post, consider signing up for my [newsletter](/newsletter) for more content like this.
 
 Thank you for reading!
+
+_Disclosure: As an Bluehost affiliate partner I earn from qualifying purchases._
