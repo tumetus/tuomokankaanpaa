@@ -62,7 +62,7 @@ All this is partly result of the fact that Wordpress is built on PHP, which is r
 
 Secondly I want to have more control over my site. I am a web developer so making websites is what I do. With Wordpress however I need to first understand how Wordpress works. Then figure out how to edit things and then do the editing using php and maybe some templating language. To be honest I have only used the Wordpress editor when designing my blog and haven't taken a look under the hood at all. So I am not sure how I would go about editing the site and don't really have the interest to find out either.
 
-I write React a lot when coding other things, it would be easy for me to also write and customise my site using that. So having the blog written in React would be ideal since I already know React and it is fast.
+I write React a lot when coding other things and it would be easy for me to also write and customise my site using that. So having the blog written in React would be ideal.
 
 ### Plugins
 
@@ -130,7 +130,7 @@ The tutorial placed the .md files to /pages/posts folder and I tried this at fir
 
 ### Placing .md files to separate Github repo
 
-Next I tried creating a new repository to Github. In that repository I had a folder for each blog post. I would then read the blog posts from that repository instead of reading them from local files. This worked well with images too because I could reference the images relativly in the .md files (e.g. /images/cover.jpg) and when I loaded the posts data with Next.js, I would convert the links to absolute links pointing to the files in the blog posts Github repo (thanks to [maxime1992](https://github.com/maxime1992/my-dev.to)).
+Next I tried creating a new repository to Github. In that repository I had a folder for each blog post. I would then read the blog posts from that repository instead of reading them from local files. This worked well with images too because I could reference the images relatively in the .md files (e.g. /images/cover.jpg) and when I loaded the posts data with Next.js, I would convert the links to absolute links pointing to the files in the blog posts Github repo (thanks to [maxime1992](https://github.com/maxime1992/my-dev.to)).
 
 I also added a Github action which triggered whenever the blog posts repo got new commits. The action would call a Vercel web hook that in return would trigger a rebuild thus updating the blog with new post data.
 
