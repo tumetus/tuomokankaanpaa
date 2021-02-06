@@ -40,7 +40,9 @@ If I would start my own blog today, here is how I would do it.
 
 I would build the blog on top of Wordpress. It is super popular for blogging and easy to setup. With Wordpress you can also add custom pages to your blog to work as a portfolio and you get your blog under your own domain.
 
-One good option is to buy web hosting from [Bluehost](https://www.bluehost.com/track/tume/) and setup Wordpress blog there. At the time of writing this, they offer free domain name for the 1st year, free ssl certificate for your domain and 1-Click Wordpress install. So hosting your Wordpress blog there is very easy to setup. This is what I used when I started out.
+Wordpress has it downsides but in my opinion for beginner bloggers, the pros outweigh the cons and Wordpress is still a good starting point.
+
+One good option is to buy web hosting from [Bluehost](https://www.bluehost.com/track/tume/) and setup Wordpress blog there. At the time of writing this, they offer free domain name for the 1st year, free ssl certificate for your domain and 1-Click Wordpress install with the starter plan. So hosting your Wordpress blog there is very easy to setup. This is what I used when I started out.
 
 Another option is to start writing posts on sites like [dev.to](https://dev.to), [Medium](https://medium.com) or [Hashnode](https://hashnode.com). This is a good option too because you don't need any setup and can start writing right away.
 
