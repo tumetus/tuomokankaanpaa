@@ -1,5 +1,5 @@
 ---
-date: "2021-02-06"
+date: "2021-02-05"
 title: "Why you should NOT code your own blog when starting out blogging"
 excerpt: "As a developer, the first instinct is to build your own blog by yourself. This is not a good idea though and here is why."
 tags: "web development, blogging"
