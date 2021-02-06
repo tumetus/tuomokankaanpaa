@@ -102,7 +102,7 @@ This tutorial was of great help (thanks Next.js team!) and I got a great foundat
 
 ## Getting to coding
 
-I am fluent with React and working on my Typescript. Next.js is a React framework so that was worked more than well for me.
+I am fluent with React and working on my Typescript. Next.js is a React framework so that worked more than well for me.
 
 I could have used plain Javascript with Next.js but because I am into learning more Typescript, I thought that this might be a good chance to get some Typescript excercise, so I chose to use Typescript.
 
