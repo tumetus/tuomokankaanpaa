@@ -1,38 +1,44 @@
-import { SitemapStream, streamToPromise } from "sitemap";
+// import { SitemapStream, streamToPromise } from "sitemap";
 import { getAllPostSlugs } from "../../lib/posts";
+const { SitemapStream, streamToPromise } = require("sitemap");
+const { Readable } = require("stream");
 
 export default async (req, res) => {
   try {
-    const smStream = new SitemapStream({
-      hostname: `https://${req.headers.host}`,
-      cacheTime: 600000,
-    });
-
-    // List of posts
-    const posts = getAllPostSlugs();
-
-    // Create each URL row
-    posts.forEach((post) => {
-      smStream.write({
+    // An array with your links
+    const links = [];
+    getAllPostSlugs().map((post) => {
+      links.push({
         url: `/blog/${post.params.slug}`,
         changefreq: "daily",
         priority: 0.9,
       });
     });
 
-    // End sitemap stream
-    smStream.end();
+    // Add other pages
+    const pages = ["/courses", "/contact", "/newsletter", "/blog"];
+    pages.map((url) => {
+      links.push({
+        url,
+        changefreq: "daily",
+        priority: 0.9,
+      });
+    });
 
-    // XML sitemap string
-    const sitemapOutput = (await streamToPromise(smStream)).toString();
+    // Create a stream to write to
+    const stream = new SitemapStream({
+      hostname: `https://${req.headers.host}`,
+    });
 
-    // Change headers
     res.writeHead(200, {
       "Content-Type": "application/xml",
     });
 
-    // Display output to user
-    res.end(sitemapOutput);
+    const xmlString = await streamToPromise(
+      Readable.from(links).pipe(stream)
+    ).then((data) => data.toString());
+
+    res.end(xmlString);
   } catch (e) {
     console.log(e);
     res.send(JSON.stringify(e));
