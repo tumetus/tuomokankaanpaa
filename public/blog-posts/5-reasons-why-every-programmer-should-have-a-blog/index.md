@@ -80,7 +80,7 @@ For example you might get job offers you otherwise would not, because people fin
 
 Starting a blog is quite easy. You just setup a blog with e.g. Wordpress, start typing and hit publish. If you compare it to e.g. making a Youtube video, writing an article requires significantly less work to get your content out there.
 
-While making videos is also great ([I do it to](https://www.youtube.com/channel/UC34UXFLKqdW3cpk5CBu2Siw)) if you are just starting out to make programming content (= articles / videos), I think making a blog is a great way to get started because of the fact that it is easier to start. You also get quickly to the habit of producing content, without having to worry about cameras, lightning, audio, editing etc.
+While making videos is also great ([I do it too](https://www.youtube.com/channel/UC34UXFLKqdW3cpk5CBu2Siw)) if you are just starting out to make programming content (= articles / videos), I think making a blog is a great way to get started because of the fact that it is easier to start. You also get quickly to the habit of producing content, without having to worry about cameras, lightning, audio, editing etc.
 
 > _Important: [Why you should NOT code your own blog when starting out blogging](/blog/why-you-should-not-code-your-own-blog-when-starting-blogging)._
 
