@@ -8,6 +8,12 @@ coverImage: "cover.jpg"
 description: "As a developer, the first instinct is to build your own blog by yourself. This is not a good idea though and here is why."
 ---
 
+[
+![Starting a programming blog? Don't make this mistake.](./images/thumbnail.jpg)
+](http://www.youtube.com/watch?v=v3fIUN5tndI)
+
+[📹 View on Youtube](http://www.youtube.com/watch?v=v3fIUN5tndI)
+
 Having your own blog as a developer is a great idea. When writing articles you also learn in the process about the thing you are writing. It is also a good way to show a potential employer that you know your stuff.
 
 As a developer, the first instinct is to build your own blog by yourself and not to use a ready made blogging platform like Wordpress for example.
