@@ -1,6 +1,6 @@
 ---
 date: "2050-01-01"
-title: "Do this to improve your Next.js application SEO!"
+title: "How to add sitemap and robots.txt to Next.js application"
 excerpt: "In this article I will show you how to add sitemap and robots.txt to your Next.js website to make your website more SEO friendly."
 tags: "next.js, jamstack, seo, web development"
 slug: "nextjs-seo-how-to-add-sitemap-and-robots-txt"
