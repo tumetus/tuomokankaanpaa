@@ -1,5 +1,5 @@
 ---
-date: "2050-05-11"
+date: "2021-05-11"
 title: "How to add sitemap and robots.txt to Next.js application"
 excerpt: "In this article I will show you how to add sitemap and robots.txt to your Next.js website to make your website more SEO friendly."
 tags: "next.js, jamstack, seo, web development"
