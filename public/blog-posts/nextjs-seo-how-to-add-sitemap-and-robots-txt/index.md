@@ -1,12 +1,18 @@
 ---
-date: "2050-01-01"
+date: "2050-05-11"
 title: "How to add sitemap and robots.txt to Next.js application"
 excerpt: "In this article I will show you how to add sitemap and robots.txt to your Next.js website to make your website more SEO friendly."
 tags: "next.js, jamstack, seo, web development"
 slug: "nextjs-seo-how-to-add-sitemap-and-robots-txt"
-coverImage: "cover.jpg"
+coverImage: "thumbnail.jpg"
 description: "In this article I will show you how to add sitemap and robots.txt to your Next.js website to make your website more SEO friendly."
 ---
+
+[
+![How to add sitemap and robots.txt to Next.js application](./images/thumbnail.jpg)
+](https://www.youtube.com/watch?v=rIh-VelVzgc)
+
+[📹 View on Youtube](https://www.youtube.com/watch?v=rIh-VelVzgc)
 
 It's important for any website to have good search engine optimization (SEO) in order to be discovered and visible in search engines such as Google. This is especially true for blogs because you want to have your blog posts shown by search engines.
 
