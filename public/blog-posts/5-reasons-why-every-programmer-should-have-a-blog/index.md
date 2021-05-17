@@ -24,7 +24,7 @@ Having a blog has a bunch of benefits. In this article I will list five reasons 
 
 When you write what you know and that way teach others, it will also make you better in the thing you write about. Because if you are teaching someone you must know your stuff.
 
-Let's say for example that you write an article about React fragments. You might be familiar with them and you know how to use them.
+Let's say for example that you write an article about [React fragments](/blog/react-fragments-what-why-how). You might be familiar with them and you know how to use them.
 
 But when you have to write an article about React fragments, you need to actually understand how they work, why would you use them and how to use them.
 
