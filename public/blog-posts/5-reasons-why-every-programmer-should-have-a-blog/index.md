@@ -1,12 +1,18 @@
 ---
-date: "2050-01-01"
-title: "5 reasons why every programmer should have a blog in 2021"
+date: "2021-05-18"
+title: "5 reasons why every programmer should have a blog"
 excerpt: "If you are a programmer without your own blog, you need to start one right away! Having a blog has a bunch of benefits. In this article I will list five reasons why you should have a blog as a programmer."
 tags: "web develeopment"
 slug: "5-reasons-why-every-programmer-should-have-a-blog"
-coverImage: "cover.jpg"
+coverImage: "thumbnail.jpg"
 description: "If you are a programmer without your own blog, you need to start one right away! Having a blog has a bunch of benefits. In this article I will list five reasons why you should have a blog as a programmer."
 ---
+
+[
+![5 reasons why every programmer should have a blog](./images/thumbnail.jpg)
+](https://youtu.be/IEV7AKtLmwI)
+
+[📹 View on Youtube](https://youtu.be/IEV7AKtLmwI)
 
 When you hear a word "blog" you might be thinking something like "That's so 2000, no one reads blogs anymore!".
 
