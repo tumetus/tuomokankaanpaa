@@ -2,7 +2,7 @@
 date: "2021-05-18"
 title: "5 reasons why every programmer should have a blog"
 excerpt: "If you are a programmer without your own blog, you need to start one right away! Having a blog has a bunch of benefits. In this article I will list five reasons why you should have a blog as a programmer."
-tags: "web develeopment"
+tags: "web develeopment, blogging"
 slug: "5-reasons-why-every-programmer-should-have-a-blog"
 coverImage: "thumbnail.jpg"
 description: "If you are a programmer without your own blog, you need to start one right away! Having a blog has a bunch of benefits. In this article I will list five reasons why you should have a blog as a programmer."
