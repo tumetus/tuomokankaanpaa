@@ -16,7 +16,7 @@ description: "If you are a programmer without your own blog, you need to start o
 
 When you hear a word "blog" you might be thinking something like "That's so 2000, no one reads blogs anymore!".
 
-I would argue that it's not exactly accurate. If you are a programmer without your own blog, I think you should definately start one right away!
+I would argue that it's not exactly accurate. If you are a programmer without your own blog, I think you should definitely start one right away!
 
 Having a blog has a bunch of benefits. In this article I will list five reasons why you should have a blog as a programmer.
 
@@ -30,7 +30,7 @@ But when you have to write an article about React fragments, you need to actuall
 
 If you know all that stuff, great! Writing that article should be easy. In this case there can still be aspects that you might not have known, or use cases or properties you find out while browsing through documentation, something you would not be doing if you weren't doing a research for your article.
 
-But if you e.g. know everything about fragments except why would one use them, why are they better than wrapper divs, you must do your research and understand the why. This way you almost accidently get better with fragments.
+But if you e.g. know everything about fragments except why would one use them, why are they better than wrapper divs, you must do your research and understand the why. This way you almost accidentally get better with fragments.
 
 It goes without saying that I just used React fragments as an example for this, but the same goes on any other concept that you might write about.
 
@@ -76,7 +76,7 @@ Now think about which candidate will you choose.
 
 Most likely the second candidate. Because you actually have proof that this candidate knows the stuff he/she claims to know in their CV.
 
-So having a blog will also act as an ensurance to possible future employer that you know what you claim to know.
+So having a blog will also act as an insurance to possible future employer that you know what you claim to know.
 
 On top of that a blog can open doors that you wouldn't otherwise even know about.
 
