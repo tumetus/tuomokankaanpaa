@@ -10,15 +10,15 @@ export default function Newsletter() {
       <Meta title={`Newsletter | Tuomo Kankaanpää`}></Meta>
       <h1>Newsletter</h1>
       <p>
-        Subscribe to learn more about web development including React and
-        Javascript. I usually send email once or twice a month. You can
+        Subscribe to learn more about web development, React, Next.js and
+        anything else I am working on. I send email once a week. You can
         unsubscribe anytime you want.
       </p>
       <p>Here is what you get when you subscribe:</p>
       <ul>
         <li>
-          Exclusive React, Javascript and web development content straight to
-          your inbox
+          Exclusive React, Next.js, Javascript and web development content
+          straight to your inbox
         </li>
         <li>Information about new blog posts and videos</li>
         <li>
@@ -27,9 +27,17 @@ export default function Newsletter() {
             <a>courses</a>
           </Link>
         </li>
-        <li>Developer soft skill tips</li>
+        <li>Sneak peek on what I am doing and working on weekly</li>
       </ul>
       <NewsletterBanner />
+      <p>
+        <i>
+          I publish my emails on my blog also (using "newsletter" tag) but they
+          will always be published with one week delay. So by subscribing to the
+          newsletter, you get the email straight to your inbox as soon as it is
+          published!
+        </i>
+      </p>
       <Footer />
     </Layout>
   );

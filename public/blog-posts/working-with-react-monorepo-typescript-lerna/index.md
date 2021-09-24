@@ -2,7 +2,7 @@
 date: "2021-09-04"
 title: "Working with React, Monorepo, Typescript and Lerna 👨‍💻"
 excerpt: "This week I worked on setting up a new javascript project using monorepo structure. The project uses React & Typescript and code sharing between packages."
-tags: "what is up,web development"
+tags: "newsletter,what is up,web development"
 slug: "working-with-react-monorepo-typescript-lerna"
 # coverImage: "cover.jpg"
 description: "This week I worked on setting a Javascript project using monorepo structure."
