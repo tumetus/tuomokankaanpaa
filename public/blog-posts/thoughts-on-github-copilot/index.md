@@ -1,5 +1,5 @@
 ---
-date: "2021-09-10"
+date: "2021-09-17"
 title: "Thoughts on Github Copilot 🤖"
 excerpt: "Github Copilot was announced couple of weeks ago. I got into the waiting list as soon as it was announced and just the other week I finally got in! Here is my thoughts on Github Copilot after using it for one week."
 tags: "newsletter,what is up,web development"
