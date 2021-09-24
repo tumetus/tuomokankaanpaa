@@ -4,7 +4,7 @@ title: "Thoughts on Github Copilot 🤖"
 excerpt: "Github Copilot was announced couple of weeks ago. I got into the waiting list as soon as it was announced and just the other week I finally got in! Here is my thoughts on Github Copilot after using it for one week."
 tags: "newsletter,what is up,web development"
 slug: "thoughts-on-github-copilot"
-# coverImage: "cover.jpg"
+coverImage: "cover.png"
 description: "I used Github Copilot for one week! I found some big pros and cons and in this article I tell you what they are."
 ---
 
