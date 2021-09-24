@@ -1,5 +1,5 @@
 ---
-date: "2021-09-04"
+date: "2021-09-11"
 title: "Working with React, Monorepo, Typescript and Lerna 👨‍💻"
 excerpt: "This week I worked on setting up a new javascript project using monorepo structure. The project uses React & Typescript and code sharing between packages."
 tags: "newsletter,what is up,web development"
