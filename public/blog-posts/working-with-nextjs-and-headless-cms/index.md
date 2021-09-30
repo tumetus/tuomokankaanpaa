@@ -8,6 +8,8 @@ coverImage: "cover.jpg"
 description: "I swapped my Next.js blog application from using static data to use Headless CMS as datasource."
 ---
 
+_This article was originally published on [my newsletter](/newsletter) last week. I publish previous week's newsletter here on the blog. If you want to read these as soon as they are published, [sign up](/newsletter) for the newsletter!_
+
 Ahoy,
 
 Last week I talked about my top 5 features in Visual Studio Code. After publishing that video, I actually ran into a website that lists a bunch (35 to be exact) of useful, but kind of unknown, features in VS Code.
