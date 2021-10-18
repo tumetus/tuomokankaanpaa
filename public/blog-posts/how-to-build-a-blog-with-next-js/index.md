@@ -28,7 +28,7 @@ Ok to be honest, it could use some styling before production, so I might also do
 
 Design is really a part that I probably struggle the most. If I have a design ready and I only need to implement it, that's easy. But making the actual design is not my strong suit. So it will be fun to try to implement that to the application and I am sure that I will learn a ton while working on it.
 
-# Top picks for this week 🎯
+## Top picks for this week 🎯
 
 ⚡ [14 Rules That Will Make You A Better Developer](https://medium.com/quick-code/14-important-rules-that-every-developer-should-follow-9839a574b59e)
 
