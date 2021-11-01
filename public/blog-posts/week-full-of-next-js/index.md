@@ -14,7 +14,7 @@ Ahoy,
 
 Past week was full of web development and Next.js!
 
-# Next.js + Headless CMS + GraphQL - Next.js tutorial for beginners
+## Next.js + Headless CMS + GraphQL - Next.js tutorial for beginners
 
 [
 ![Next.js + Headless CMS + GraphQL - Next.js tutorial for beginners (part 2)](./images/nextjs-headless-cms-yt-controls.png)
@@ -28,11 +28,11 @@ The tutorial teaches you how to integrate a headless CMS to a Next.js blog appli
 
 You can find the tutorial (both part 1 and part 2) from the [Youtube channel](https://www.youtube.com/tuomokankaanpaa).
 
-# Next.js Conf
+## Next.js Conf
 
 [Next.js conf](https://nextjs.org/conf) 2021 was held on 26.10.2021. I watched the conference live and was really excited about all the new things that were announced. Here are some highlights.
 
-## Next.js 12
+### Next.js 12
 
 [
 ![Next.js 12 - All new features & updates](./images/nextjs-12-features-yt-controls.png)
@@ -44,7 +44,7 @@ First of all Next.js 12 was announced which is their biggest release ever. With 
 
 If you want to learn more about Next.js 12, I made a video detailing and explaining all the new features and improvements of Next.js 12. You can watch it on the [Youtube channel](https://www.youtube.com/tuomokankaanpaa).
 
-## Vercel edge functions
+### Vercel edge functions
 
 [
 ![Next.js 12 - Middleware & Edge functions explained](./images/middleware-edge-yt-controls.png)
@@ -62,7 +62,7 @@ At this point I felt that I wanted to make a video sharing what I had learned. S
 
 In the video I also explain what the new Next.js 12 feature Middleware is because it is actually something that works together with Edge functions.
 
-# Wrapping it up
+## Wrapping it up
 
 So as you can see, it was a pretty busy but exciting week! I am super excited that I was able to make the videos about Next.js 12 and Edge functions + Middleware this week, on top of my regular Tuesday video.
 
