@@ -10,6 +10,11 @@ description: "Learn how to save and fetch data with Next.js middleware."
 
 In this article we will learn how to save and fetch data from Redis inside of a Next.js middleware & edge functions. We will do this by building a request logger middleware for a fresh Next.js application. You can add this middleware also to your existing application. The middleware will save request data to Redis for each request made to the api routes. We will use [Upstash](https://www.upstash.com) Redis for handling setting up and maintaining the Redis database. Let's get started!
 
+If you rather watch a video, I also made a video about this on my [Youtube channel](https://www.youtube.com/tuomokankaanpaa)!
+[
+![Watch on Youtube](./images/cover-yt.png)
+](https://www.youtube.com/watch?v=hY2BGM7AnmY)
+
 ## Create the middleware
 
 First initialise a new Next.js project.
