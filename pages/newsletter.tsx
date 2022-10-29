@@ -3,6 +3,29 @@ import Layout from "../components/layout";
 import NewsletterBanner from "../components/newsletter-banner";
 import Footer from "../components/footer";
 import Meta from "../components/meta";
+import Button from "@material-ui/core/Button";
+
+const SubscribeLink = () => {
+  return (
+    <a
+      href="https://www.getrevue.co/profile/tuomokankaanpaa"
+      style={{ color: "#fff" }}
+      target="_blank"
+    >
+      <Button
+        variant="contained"
+        style={{
+          backgroundColor: "#0070f3",
+          color: "#fff",
+          marginTop: "15px",
+        }}
+        type="submit"
+      >
+        Subscribe
+      </Button>
+    </a>
+  );
+};
 
 export default function Newsletter() {
   return (
@@ -11,8 +34,8 @@ export default function Newsletter() {
       <h1>Newsletter</h1>
       <p>
         Subscribe to learn more about web development, React, Next.js and
-        anything else I am working on. I send email once a week. You can
-        unsubscribe anytime you want.
+        anything else I am working on. I am sending emails occasionally and I
+        won't spam you. You can unsubscribe anytime you want.
       </p>
       <p>Here is what you get when you subscribe:</p>
       <ul>
@@ -27,17 +50,11 @@ export default function Newsletter() {
             <a>courses</a>
           </Link>
         </li>
-        <li>Sneak peek on what I am doing and working on weekly</li>
+        <li>Sneak peek on what I am doing and working on</li>
       </ul>
-      <NewsletterBanner />
-      <p>
-        <i>
-          I publish my emails on my blog also (using "newsletter" tag) but they
-          will always be published with one week delay. So by subscribing to the
-          newsletter, you get the email straight to your inbox as soon as it is
-          published!
-        </i>
-      </p>
+      <div>
+        <SubscribeLink />
+      </div>
       <Footer />
     </Layout>
   );
