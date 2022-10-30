@@ -4,6 +4,7 @@ import Link from "next/link";
 import CookieConsent from "react-cookie-consent";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 import * as gtag from "../utils/gtag";
 import Meta from "../components/meta";
 import "../styles/global.css";
@@ -47,6 +48,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Link>{" "}
         for more info.
       </CookieConsent>
+      <Analytics />
     </ThemeProvider>
   );
 }
