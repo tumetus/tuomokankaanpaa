@@ -5,28 +5,6 @@ import Footer from "../components/footer";
 import Meta from "../components/meta";
 import Button from "@material-ui/core/Button";
 
-const SubscribeLink = () => {
-  return (
-    <a
-      href="https://www.getrevue.co/profile/tuomokankaanpaa"
-      style={{ color: "#fff" }}
-      target="_blank"
-    >
-      <Button
-        variant="contained"
-        style={{
-          backgroundColor: "#0070f3",
-          color: "#fff",
-          marginTop: "15px",
-        }}
-        type="submit"
-      >
-        Subscribe
-      </Button>
-    </a>
-  );
-};
-
 export default function Newsletter() {
   return (
     <Layout activePage={"newsletter"}>
@@ -53,7 +31,7 @@ export default function Newsletter() {
         <li>Sneak peek on what I am doing and working on</li>
       </ul>
       <div>
-        <SubscribeLink />
+        <NewsletterBanner />
       </div>
       <Footer />
     </Layout>
