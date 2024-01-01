@@ -43,7 +43,7 @@ export default function Home() {
           <h2>Ahoy, I'm Tuomo!</h2>
           <p>
             I'm a Fullstack Web Developer and teacher. I like to work with and
-            teach React and Javascript.
+            teach Next.js, React and Javascript.
           </p>
           <p>I also do card magic.</p>
           <p
@@ -129,7 +129,7 @@ export default function Home() {
         <p>
           I have written blog posts for past couple of years. I enjoy teaching
           things I have learned through blog posts. Most of my posts are about
-          web development, React, Javascript and Draft.js.
+          Next.js, web development, React, Javascript.
         </p>
         <p>
           Check out the{" "}
@@ -165,6 +165,25 @@ export default function Home() {
     </Layout>
   );
 }
+
+const YTImage2 = ({ src }) => {
+  return (
+    <div>
+      <img src={src} />
+    </div>
+  );
+};
+
+const YTImage3 = ({ src }) => {
+  return (
+    <div>
+      <img
+        src={src}
+        className="image big-image-yt-image thumbnail-preview-img"
+      />
+    </div>
+  );
+};
 
 const YtImage = ({ src }: { src: string }) => {
   return (
