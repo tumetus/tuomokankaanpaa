@@ -132,9 +132,9 @@ export default function BlogPost({
           opacity: 0.5;
         `)}
       ></hr>
-      <section className={css(`padding-top:1.5rem;`)}>
+      {/* <section className={css(`padding-top:1.5rem;`)}>
         <NewsletterBanner />
-      </section>
+      </section> */}
       <Footer />
     </Layout>
   );
