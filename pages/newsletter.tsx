@@ -4,18 +4,33 @@ import NewsletterBanner from "../components/newsletter-banner";
 import Footer from "../components/footer";
 import Meta from "../components/meta";
 import Button from "@material-ui/core/Button";
+import { useEffect } from "react";
 
 export default function Newsletter() {
+  useEffect(() => {
+    window.location.href = "https://tuomokankaanpaa.ck.page/newsletter";
+  }, []);
+
   return (
-    <Layout activePage={"newsletter"}>
-      <Meta title={`Newsletter | Tuomo Kankaanpää`}></Meta>
-      <h1>Newsletter</h1>
+    <div>
+      Redirecting you to the newsletter page...{" "}
       <p>
-        Sign up for my newsletter{" "}
-        <a href="https://tuomokankaanpaa.ck.page/newsletter">here</a>!
+        Click <a href="https://tuomokankaanpaa.ck.page/newsletter">here</a> if
+        you are not redirected in 5 seconds.
       </p>
-    </Layout>
+    </div>
   );
+
+  // return (
+  //   <Layout activePage={"newsletter"}>
+  //     <Meta title={`Newsletter | Tuomo Kankaanpää`}></Meta>
+  //     <h1>Newsletter</h1>
+  //     <p>
+  //       Sign up for my newsletter{" "}
+  //       <a href="https://tuomokankaanpaa.ck.page/newsletter">here</a>!
+  //     </p>
+  //   </Layout>
+  // );
 
   // return (
   //   <Layout activePage={"newsletter"}>
