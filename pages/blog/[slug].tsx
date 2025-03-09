@@ -81,50 +81,7 @@ export default function BlogPost({
           renderers={renderers}
         />
       </article>
-      <section
-        className={css(`
-        margin-top: 50px;
-      `)}
-      >
-        <hr
-          className={css(`
-          margin-bottom: 20px;
-          width: 50%;
-          opacity: 0.5;
-        `)}
-        ></hr>
-        Read next:
-        <ul>
-          {prevPost != null && (
-            <li>
-              <Link href={`/blog/${prevPost.slug}`}>
-                <a>{prevPost.title}</a>
-              </Link>
-            </li>
-          )}
-          {nextPost != null && (
-            <li>
-              <Link href={`/blog/${nextPost.slug}`}>
-                <a>{nextPost.title}</a>
-              </Link>
-            </li>
-          )}
-        </ul>
-      </section>
-      <section
-        className={css(`
-        margin-top: 40px;
-      `)}
-      >
-        If you want to learn more, make sure to{" "}
-        <a
-          href="https://www.youtube.com/channel/UC34UXFLKqdW3cpk5CBu2Siw?sub_confirmation=true"
-          target="_blank"
-        >
-          subscribe on Youtube
-        </a>
-        !
-      </section>
+    
       <hr
         className={css(`
           margin-top: 1.5rem;
