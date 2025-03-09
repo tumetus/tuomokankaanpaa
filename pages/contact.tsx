@@ -9,8 +9,8 @@ export default function Contact() {
       <h1>Contact</h1>
       <p>
         Best way to contact me is on{" "}
-        <a href="https://www.twitter.com/tumee" target="_blank">
-          Twitter
+        <a href="https://www.x.com/tumee" target="_blank">
+          X
         </a>{" "}
         or by email tuomo(a)tuomokankaanpaa.com.
       </p>
