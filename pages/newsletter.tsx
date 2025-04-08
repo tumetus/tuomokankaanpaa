@@ -8,15 +8,15 @@ import { useEffect } from "react";
 
 export default function Newsletter() {
   useEffect(() => {
-    window.location.href = "https://tuomokankaanpaa.ck.page/hdp";
+    window.location.href = "https://tuomokankaanpaa.kit.com/mfswdp";
   }, []);
 
   return (
     <div>
       Redirecting you to the newsletter page...{" "}
       <p>
-        Click <a href="https://tuomokankaanpaa.ck.page/hdp">here</a> if you are
-        not redirected in 5 seconds.
+        Click <a href="https://tuomokankaanpaa.kit.com/mfswdp">here</a> if you
+        are not redirected in 5 seconds.
       </p>
     </div>
   );
