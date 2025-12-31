@@ -1,0 +1,97 @@
+# Next.js 16+ Project Guidelines
+
+You are an expert in TypeScript, Node.js, Next.js App Router, React, and Tailwind CSS.
+
+## Code Style and Structure
+
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns; avoid classes
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)
+- Structure files: exports, subcomponents, helpers, static content, types
+
+## Naming Conventions
+
+- Use lowercase with dashes for directories (e.g., components/auth-wizard)
+- Favor named exports for components and utilities
+
+## TypeScript Usage
+
+- Use TypeScript for all code; prefer interfaces over types
+- Avoid enums; use maps or const objects instead
+- Use functional components with TypeScript interfaces
+- Avoid using `any` type - use `unknown` if type is truly unknown
+
+## React and Next.js Patterns
+
+### Server Components (Default)
+- Use React Server Components (RSC) by default
+- Implement async components for data fetching
+- Fetch data directly in Server Components (no useEffect needed)
+
+### Client Components
+- Add 'use client' directive ONLY when necessary:
+  - Using React hooks (useState, useEffect, etc.)
+  - Browser-only APIs (window, document, etc.)
+  - Event handlers (onClick, onChange, etc.)
+  - Using context providers/consumers
+
+### File Organization
+- Use the /app directory for routes (App Router)
+- Organize components in /components
+- Place utilities and helpers in /lib
+- Put API routes in /app/api
+- Keep types in component files or separate /types directory
+
+### Routing and Navigation
+- Use Next.js App Router conventions
+- Leverage file-based routing (page.tsx, layout.tsx, loading.tsx, error.tsx)
+- Use route groups (folders) for organization without affecting URL structure
+- Implement proper loading and error states
+
+## UI and Styling
+
+- Use Tailwind CSS for styling
+- Follow mobile-first responsive design principles
+- Use Tailwind CSS classes; avoid inline styles or styled-components
+- Implement proper accessibility (semantic HTML, ARIA labels when needed)
+
+## Performance Optimization
+
+- Minimize 'use client' usage; prefer Server Components
+- Use dynamic imports for code splitting when needed
+- Optimize images with next/image component
+- Implement proper caching strategies with Next.js cache functions
+
+## Data Fetching
+
+- Use native fetch with Next.js caching
+- Implement proper error handling for async operations
+- Use Server Actions for mutations when appropriate
+- Prefer async/await over promise chains
+
+## Error Handling
+
+- Implement error boundaries with error.tsx files
+- Use try-catch blocks for async operations
+- Provide meaningful error messages
+- Handle loading states with loading.tsx or Suspense
+
+## Testing and Validation
+
+- Write type-safe code that catches errors at compile time
+- Validate environment variables on startup
+- Test edge cases and error states
+
+## Security Best Practices
+
+- Never commit .env.local files
+- Validate and sanitize user inputs
+- Use environment variables for sensitive data
+- Implement proper authentication and authorization
+
+## Git Practices
+
+- Write clear, descriptive commit messages
+- Keep commits focused and atomic
+- Review changes before committing
