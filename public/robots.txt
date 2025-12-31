@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://www.tuomokankaanpaa.com/api/blog-sitemap
