@@ -3,6 +3,10 @@
 ## Overview
 Single-page landing site for Tuomo Kankaanpää - software developer and ghostwriter for dev tool companies.
 
+## Technical notes
+Use next.js.
+Use tailwind for styles. If e.g. some color required is not found in tailwind classes, create class for it instead of using it inline.
+
 ## Brand Colors
 - **Primary Green**: `#00D966` (Spotify green - for CTAs in developer section)
 - **Primary Purple**: `#9333EA` (Royal purple - for CTAs in dev tools section)
@@ -113,9 +117,9 @@ Single-page landing site for Tuomo Kankaanpää - software developer and ghostwr
 - Centered above name
 
 ## Links
-- YouTube channel: [Insert URL]
+- YouTube channel: www.youtube.com/tuomokankaanpaa
 - Free course: https://buildprofitablesaas.com/
-- Email: [Insert email]
+- Email: tuomo@tuomokankaanpaa.com
 
 ## Notes
 - Fully responsive design
