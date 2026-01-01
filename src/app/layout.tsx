@@ -1,15 +1,35 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sans",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-heading",
 });
 
 export const metadata: Metadata = {
-  title: "Tuomo Kankaanpää - Software Developer & Ghostwriter",
-  description: "Software Developer | Ghostwriter for Dev Tool Companies | Youtuber",
+  title: "Tuomo Kankaanpää - I build Trust for Dev Tool Companies",
+  description:
+    "I help dev tool companies bridge the gap between complex features and user adoption while building authority and capturing more leads.",
+  openGraph: {
+    title: "Tuomo Kankaanpää - I build Trust for Dev Tool Companies",
+    description:
+      "I help dev tool companies bridge the gap between complex features and user adoption while building authority and capturing more leads.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tuomo Kankaanpää - I build Trust for Dev Tool Companies",
+    description:
+      "I help dev tool companies bridge the gap between complex features and user adoption while building authority and capturing more leads.",
+  },
 };
 
 export default function RootLayout({
@@ -18,10 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${plusJakartaSans.variable} ${outfit.variable}`}
+    >
+      <body>{children}</body>
     </html>
   );
 }

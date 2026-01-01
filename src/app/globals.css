@@ -1,19 +1,39 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+@theme {
+  --font-sans: var(--font-sans), 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-heading: var(--font-heading), 'Outfit', system-ui, sans-serif;
   
-  /* Brand Colors */
-  --color-primary-green: #00D966;
-  --color-primary-green-hover: #00C059;
-  --color-primary-purple: #9333EA;
-  --color-primary-purple-hover: #7E22CE;
-  --color-text-black: #1a1a1a;
-  --color-text-gray: #6B7280;
-  --color-bg-white: #FFFFFF;
-  --color-bg-light-gray: #F9FAFB;
-  --color-bg-base: #FAFBFC;
-  --color-border-subtle: #E5E7EB;
+  /* Theme Colors - Tailwind v4 will automatically create utilities */
+  --color-background: hsl(224 71% 4%);
+  --color-foreground: hsl(210 40% 98%);
+  
+  --color-card: hsl(224 71% 6%);
+  --color-card-foreground: hsl(210 40% 98%);
+  
+  --color-popover: hsl(224 71% 6%);
+  --color-popover-foreground: hsl(210 40% 98%);
+  
+  --color-primary: hsl(273 67% 55%); /* #9333EA - Purple */
+  --color-primary-foreground: hsl(210 40% 98%);
+  
+  --color-secondary: hsl(217 19% 27%);
+  --color-secondary-foreground: hsl(210 40% 98%);
+  
+  --color-muted: hsl(217 19% 15%);
+  --color-muted-foreground: hsl(215 20% 65%);
+  
+  --color-accent: hsl(148 100% 43%); /* #00D966 - Vibrant Green */
+  --color-accent-foreground: hsl(224 71% 4%);
+  
+  --color-destructive: hsl(0 62% 30%);
+  --color-destructive-foreground: hsl(210 40% 98%);
+  
+  --color-border: hsl(217 19% 20%);
+  --color-input: hsl(217 19% 20%);
+  --color-ring: hsl(273 67% 55%);
+  
+  --radius: 0.5rem;
 }
 
 * {
@@ -21,15 +41,35 @@
 }
 
 body {
-  background: var(--color-bg-base);
-  color: var(--color-text-black);
   font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Fade-in animations */
-@keyframes fade-in {
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #00D966, #34d399, #9333EA);
+}
+
+.glass-card {
+  background: color-mix(in srgb, var(--color-card) 50%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -40,16 +80,96 @@ body {
   }
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+/* Animation Utility Classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
 .animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
+  animation: fadeIn 1s ease-out forwards;
 }
 
-.animate-fade-in-delay-1 {
-  opacity: 0;
-  animation: fade-in 0.6s ease-out 0.2s forwards;
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
 }
 
-.animate-fade-in-delay-2 {
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Stagger delays for sequential animations */
+.animate-delay-100 {
+  animation-delay: 0.1s;
   opacity: 0;
-  animation: fade-in 0.6s ease-out 0.4s forwards;
+}
+
+.animate-delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.animate-delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.animate-delay-400 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.animate-delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.animate-delay-600 {
+  animation-delay: 0.6s;
+  opacity: 0;
 }
