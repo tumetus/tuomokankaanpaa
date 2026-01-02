@@ -19,7 +19,7 @@ export function HeroSection() {
       >
         <Button
           size="lg"
-          className="h-16 px-10 text-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-2xl shadow-xl shadow-accent/20 group"
+          className="min-h-16 h-auto w-full max-w-full px-6 py-4 text-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-2xl shadow-xl shadow-accent/20 group whitespace-normal flex-wrap text-center leading-snug sm:w-auto sm:px-10"
         >
           5 Biggest Mistakes Web Developers Make Building SaaS Apps{" "}
           <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
